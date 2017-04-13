@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.point {
+    fill: #67074e; 
+    stroke: #000;
+}
+
+.pointh {
+    fill: #000; 
+    stroke: #000;
+}
+
+.rect {
+    fill: #f58233;
+    width: 15px;
+}
+
+.label {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.smallchart {
+    display: inline-block;
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.line {
+    stroke: #398596;
+    fill: none;
+    stroke-width: 2;
+}
+
+
+/* Based on code from W3Schools */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #398596;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #074e67;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+    margin:20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* Based on code from http://bl.ocks.org/Caged/6476579*/
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

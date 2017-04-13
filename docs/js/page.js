@@ -44,9 +44,9 @@ var DataObject = function(config){
       that.onNetworkBuildings = onNetworkBuildings
     })
 
-    //uncomment this...
-    // d3.csv(that.dir+'/file.csv',function(csv){
-    //   that.products = csv;
-    // })
+    // uncomment this...
+    d3.csv(that.dir+'/services_per_product.csv',function(csv){
+      that.products = csv;
+    })
   }
 }
