@@ -22,6 +22,9 @@ var DataObject = function(config){
         console.log("Loaded On Network buildings")
         that.onNetworkBuildings = onNetworkBuildings
         that.offNetworkBuildings = offNetworkBuildings
+
+        //This should be set when the final final final final thing is loaded.
+        that.loaded = true;
       });
     })
   }
