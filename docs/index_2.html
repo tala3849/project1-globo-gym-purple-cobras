@@ -7,7 +7,6 @@
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
-
 <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
 
 <!-- Maps -->
@@ -31,13 +30,30 @@
 
 <!-- Section 1: Map -->
   <div class="grid grid--gut12">
-    <div class="col col--2 bg-gray" id="map-interaction"></div>
+    <div class="col col--1" id="map-interaction"></div>
 
     <div class="col col--7 pl0" id="map"></div>
     <script src="js/map_base.js"></script>
+    <script src="js/map_interaction.js"></script>
 
-    <div class="col col--3 bg-gray">
-  </div>
+    <div class="col col--3">
+      <h5 class="txt-h5 border-b mb6">Layers</h5>
+      <label class='switch-container'>
+        <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
+        <div class='switch'></div>
+          <span class="px6">On Network</span>
+      </label><br>
+      <label class='switch-container'>
+        <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
+        <div class='switch switch'></div>
+          <span class="px6">Off Network</span>
+      </label><br>
+      <!-- <label class='switch-container'>
+        <input type='checkbox' checked='checked' onClick="map.setLayoutProperty('named-roads','visibility', ( map.getLayoutProperty('named-roads','visibility')=='visible'? 'none' : 'visible') )"/>
+        <div class='switch switch'></div>
+          <span style="background-color:cyan" class="px6 ml6 ">Named Roads</span>
+      </label> -->
+    </div>
 
   </div>
   <div id="map-vis-description">
@@ -63,7 +79,7 @@
       pageData = new DataObject({dir: directory})
       pageData.load()
       var pause = setInterval(function(){
-        if (pageData.loaded){
+        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products){
           clearInterval(pause);
           console.log("Data loaded, data available inside of pageData Object")
 

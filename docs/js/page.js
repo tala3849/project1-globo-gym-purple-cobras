@@ -10,7 +10,9 @@ function toggleVis(btn, id){
 var DataObject = function(config){
   this.dir = config.dir
 
-  this.loaded = false;
+  this.onNetworkBuildings  = false
+  this.offNetworkBuildings = false
+  this.products = true
 
   this.load = function(){
     console.log("Loading data from directory: ",config.dir)
@@ -18,15 +20,17 @@ var DataObject = function(config){
 
     d3.json(this.dir+'/offNetwork.geojson', function(offNetworkBuildings){
       console.log("Loaded Off Network buildings")
-      d3.json(that.dir+'/onNetwork.geojson', function(onNetworkBuildings){
-        console.log("Loaded On Network buildings")
-        that.onNetworkBuildings = onNetworkBuildings
-        that.offNetworkBuildings = offNetworkBuildings
+      that.offNetworkBuildings = offNetworkBuildings
+    });
 
-        //This should be set when the final final final final thing is loaded.
-        that.products = "I'm product data"
-        that.loaded = true;
-      });
+    d3.json(that.dir+'/onNetwork.geojson', function(onNetworkBuildings){
+      console.log("Loaded On Network buildings")
+      that.onNetworkBuildings = onNetworkBuildings
     })
+
+    //uncomment this...
+    // d3.csv(that.dir+'/file.csv',function(csv){
+    //   that.products = csv;
+    // })
   }
 }
