@@ -2,6 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamVubmluZ3NhbmRlcnNvbiIsImEiOiIzMHZndnpvIn0.P
 var map = new mapboxgl.Map({
     container: 'map',
     zoom: 3,
+    hash:true,
     center: [-96.78, 37.43],
     style:'mapbox://styles/mapbox/light-v9'
   });
@@ -46,31 +47,25 @@ function loadMap(){
       },
       layout: {'visibility':'visible'}
     })
+
+    var popup = new mapboxgl.Popup({clickToClose: true})
+
+    map.on('mousemove', function (e) {
+      if (map.getZoom()>10){
+        map.getCanvas().style.cursor = 'pointer'
+        var features = map.queryRenderedFeatures(e.point,{layers: activeMapLayers});
+
+        if(!features.length){popup.remove(); return}
+
+        popup.setLngLat(e.lngLat)
+          .setHTML(JSON.stringify(features[0].properties))
+          .addTo(map);
+
+      }else{
+        map.getCanvas().style.cursor = ''
+      }
+    });
+    //Once map is loaded, enable controls
+    document.getElementById('map-interaction').style.opacity = 1;
   });
-
-  var popup = new mapboxgl.Popup({
-          closeButton: false,
-          closeOnClick: false
-      });
-
-  map.on('mousemove', function(){
-    
-  })
-
-  map.on('mouseenter', 'on-network', function(e) {
-    // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = 'pointer';
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    popup.setLngLat(e.features[0].geometry.coordinates)
-        .setHTML(JSON.stringify(e.features[0].properties))
-        .addTo(map);
-  });
-
-  map.on('mouseleave', 'on-network', function() {
-    map.getCanvas().style.cursor = '';
-    popup.remove();
-  });
-
-}
+};
