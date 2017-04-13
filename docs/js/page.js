@@ -24,6 +24,7 @@ var DataObject = function(config){
         that.offNetworkBuildings = offNetworkBuildings
 
         //This should be set when the final final final final thing is loaded.
+        that.products = "I'm product data"
         that.loaded = true;
       });
     })

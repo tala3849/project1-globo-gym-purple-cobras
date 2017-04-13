@@ -47,10 +47,18 @@
     </p>
   </div>
 
+  <div>
+    <div id='product' class="bg-gray">
+      <p>Products</p>
+      <svg></svg>
+    </div>
+  </div>
+  <script src="js/products.js"></script>
+
   <script>
     var pageData
-    // Load all the data into the DOM (going to slow things down....)
 
+    // Load all the data into the DOM (going to slow things down....)
     function runPage(directory){
       pageData = new DataObject({dir: directory})
       pageData.load()
@@ -62,9 +70,10 @@
           //Anything to do with the data should be run HERE (kick off scripts located in external files (inside js folder))
 
           //Call Map
-          loadMap()
+          loadMap();
 
-          //Call All vis
+          //Call Products VIs
+          createProductsVis();
 
         }else {
           console.log("Data Still loading, waiting for 0.5 seconds")
@@ -74,11 +83,7 @@
 
     //Default:
     runPage('data')
-
   </script>
-
-
-<!-- Section 2: Interactive vis -->
 
 </body>
 </html>
