@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Zayo Market Visualization</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<!--Put your D3 import statement between these two lines-->
+<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+<!--Put your D3 import statement between these two lines-->
+
+<!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
+
+<!-- Maps -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.css' rel='stylesheet' />
+
+<!-- Pretty formats -->
+<script async defer src="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.js"></script>
+<link href="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.min.css" rel="stylesheet">
+
+<link href="css/main.css" rel="stylesheet">
+
+<script src="js/page.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="txt-h1">Project 1: Zayo Market Visualization</h1>
+    <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3>
+  </header>
+
+<!-- Section 1: Map -->
+  <div class="grid grid--gut12">
+    <div class="col col--2 bg-gray" id="map-interaction"></div>
+
+    <div class="col col--7 pl0" id="map"></div>
+    <script src="js/map_base.js"></script>
+
+    <div class="col col--3 bg-gray">
+  </div>
+
+  </div>
+  <div id="map-vis-description">
+    <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
+    <p id='map-desc-prose' class="prose" style="display:none;">
+      Description of how this map works and what it shows
+    </p>
+  </div>
+
+</body>
+</html>
