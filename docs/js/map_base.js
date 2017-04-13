@@ -6,36 +6,39 @@ var map = new mapboxgl.Map({
     style:'mapbox://styles/mapbox/light-v9'
   });
 
-map.scrollZoom.disable();
+// map.scrollZoom.disable();
 map.addControl(new mapboxgl.NavigationControl());
 
-// map.once('load',function(){
-//   map.addSource('onNetwork', {
-//     type: 'geojson',
-//     data: 'data/onNetwork.geojson'
-//   })
-//   map.addSource('offNetwork', {
-//     type: 'geojson',
-//     data: 'data/offNetwork.geojson'
-//   })
-//
-//   map.addLayer({
-//     id: 'off-network',
-//     type: 'circle',
-//     source: 'offNetwork',
-//     paint: {
-//         'circle-color': 'red',
-//         'circle-opacity': 0.5
-//     }
-//   })
-//
-//   map.addLayer({
-//     id: 'on-network',
-//     type: 'circle',
-//     source: 'onNetwork',
-//     paint: {
-//         'circle-color': 'green',
-//         'circle-opacity': 0.5
-//     }
-//   })
-// });
+function loadMap(){
+  map.once('load',function(){
+
+    map.addSource('onNetwork', {
+      type: 'geojson',
+      data: pageData.onNetworkBuildings
+    })
+    map.addSource('offNetwork', {
+      type: 'geojson',
+      data: pageData.offNetworkBuildings
+    })
+
+    map.addLayer({
+      id: 'off-network',
+      type: 'circle',
+      source: 'offNetwork',
+      paint: {
+          'circle-color': 'red',
+          'circle-opacity': 0.5
+      }
+    })
+
+    map.addLayer({
+      id: 'on-network',
+      type: 'circle',
+      source: 'onNetwork',
+      paint: {
+          'circle-color': 'green',
+          'circle-opacity': 0.5
+      }
+    })
+  });
+}

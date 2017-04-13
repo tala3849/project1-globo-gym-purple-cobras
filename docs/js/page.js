@@ -1,5 +1,3 @@
-console.log("Page Loaded")
-
 /*
   General Page functions should go here
 */
@@ -12,9 +10,19 @@ function toggleVis(btn, id){
 var DataObject = function(config){
   this.dir = config.dir
 
+  this.loaded = false;
+
   this.load = function(){
-    d3.csv(this.dir+'/ZayoHackathonData_Buildings.csv', function(data){
-      console.log('loaded buildings')
+    console.log("Loading data from directory: ",config.dir)
+    var that = this
+
+    d3.json(this.dir+'/offNetwork.geojson', function(offNetworkBuildings){
+      console.log("Loaded Off Network buildings")
+      d3.json(that.dir+'/onNetwork.geojson', function(onNetworkBuildings){
+        console.log("Loaded On Network buildings")
+        that.onNetworkBuildings = onNetworkBuildings
+        that.offNetworkBuildings = offNetworkBuildings
+      });
     })
   }
 }

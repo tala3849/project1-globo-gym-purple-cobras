@@ -48,9 +48,33 @@
   </div>
 
   <script>
-    var pageData = new DataObject({dir: 'data'})
+    var pageData
+    // Load all the data into the DOM (going to slow things down....)
 
-    pageData.load()
+    function runPage(directory){
+      pageData = new DataObject({dir: directory})
+      pageData.load()
+      var pause = setInterval(function(){
+        if (pageData.loaded){
+          clearInterval(pause);
+          console.log("Data loaded, data available inside of pageData Object")
+
+          //Anything to do with the data should be run HERE (kick off scripts located in external files (inside js folder))
+
+          //Call Map
+          loadMap()
+
+          //Call All vis
+
+        }else {
+          console.log("Data Still loading, waiting for 0.5 seconds")
+        }
+      },500)
+    }
+
+    //Default:
+    runPage('data')
+
   </script>
 
 
