@@ -13,8 +13,8 @@ var DataObject = function(config){
   this.dir = config.dir
 
   this.load = function(){
-    d3.csv(dir+'/ZayoHackathonData_Buildings.csv',function(data){
+    d3.csv(this.dir+'/ZayoHackathonData_Buildings.csv', function(data){
       console.log('loaded buildings')
     })
-  })
+  }
 }

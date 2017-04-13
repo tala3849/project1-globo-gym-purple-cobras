@@ -4,9 +4,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-<!--Put your D3 import statement between these two lines-->
-<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
-<!--Put your D3 import statement between these two lines-->
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
 
 <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
 
@@ -48,7 +48,9 @@
   </div>
 
   <script>
-    var data = new DataObject({dir: 'data'})
+    var pageData = new DataObject({dir: 'data'})
+
+    pageData.load()
   </script>
 
 
