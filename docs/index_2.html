@@ -2,21 +2,55 @@
 <head>
 <title>Zayo Market Visualization</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--Put your D3 import statement between these two lines-->
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-<!--Put your D3 import statement between these two lines-->
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<!--Put your D3 import statement between these two lines-->
+<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+<!--Put your D3 import statement between these two lines-->
+
+<!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
+
+<!-- Maps -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.css' rel='stylesheet' />
+
+<!-- Pretty formats -->
+<script async defer src="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.js"></script>
+<link href="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.min.css" rel="stylesheet">
+
+<link href="css/main.css" rel="stylesheet">
+
+<script src="js/page.js"></script>
 </head>
 
 <body>
-    <h1>Project 1: Zayo Market Visualization</h1>
-    <h2>Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h2>
-  <div id="partOne">
-        <h1>Part One: </h1>
+  <header>
+    <h1 class="txt-h1">Project 1: Zayo Market Visualization</h1>
+    <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3>
+  </header>
+
+<!-- Section 1: Map -->
+  <div class="grid grid--gut12">
+    <div class="col col--2 bg-gray" id="map-interaction"></div>
+
+    <div class="col col--7 pl0" id="map"></div>
+    <script src="js/map_base.js"></script>
+
+    <div class="col col--3 bg-gray">
   </div>
 
+  </div>
+  <div id="map-vis-description">
+    <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
+    <p id='map-desc-prose' class="prose" style="display:none;">
+      Description of how this map works and what it shows
+    </p>
+  </div>
+
+
+<!-- Section 2: Interactive vis -->
+
+<!--
   <div class="dropdown">
     <button onclick="toggleDropdown()" class="dropbtn" id="dropdown">Choose Anscombe</button>
     <div id="myDropdown" class="dropdown-content">
@@ -26,21 +60,21 @@
       <a onclick="changeScatterData('anscombe_IV.csv'); changeBarData('anscombe_IV.csv')">Anscombe IV</a>
 
     </div>
-  </div>    
-    
+  </div>
+
   <div id="partTwo" style="float:left;">
       <h1 style="display:inline;">Part Two (Bar Chart): </h1>
       <div id="barchart">
       </div>
   </div>
-    
+
   <div id="partThree">
     <h1 style="display:inline; vertical-align: text-bottom;">Part Three &amp; Four (Scatterplot): </h1>
     <p id="scatterLabel" style="display:inline; vertical-align: text-bottom;"></p>
     <div id="scatterplot">
     </div>
   </div>
-    
+
   <div id="partFive">
     <h1>Part Five: </h1>
     <div id="scatterplotSet">
@@ -51,7 +85,7 @@
         <div id="smallScatter4"></div>
     </div>
   </div>
-    
+
   <script type="text/javascript">
       datasets = {'buildings':'../raw_data/ZayoHackathonData_Buildings.csv',
                   'accounts':'../raw_data/ZayoHackathonData_Accounts.csv',
@@ -85,7 +119,7 @@
           // else
           //     $("#partOne").append("<p>data loaded incorrectly. Try using the debugger to help you find the bug!</p>");
       }
-      
+
       // Put your part two code here *********************** Bar chart
 
       var w = 600; // Width of our visualization
@@ -109,26 +143,26 @@
               d.x = +d.x;
               d.idx = idx;
           });
-      
+
           // Define scales that convert from the data domain to screen coordinates
           // This will define scales that convert values
-          // from our data domain (.domain([min data value, max data value]) 
+          // from our data domain (.domain([min data value, max data value])
           // into screen coordinates (.range([min pixel value, max pixel value])).
           // Using linear scales maps the data directly to the pixel values using
           // pixel_val = c * data_val, where c is a constant computed by d3.
           var xScale = d3.scale.linear()
                           .domain([0, data.length])
                           .range([xOffset + margin, w - margin]);
-          
+
           var yScale = d3.scale.linear()
                           .domain([0, d3.max(data, function(d) { return parseFloat(d.x); })+1])
                           .range([h - yOffset - margin, margin]);
-          
+
           // Next, we will create an SVG element to contain our visualization.
           var svg = d3.select("#barchart").append("svg:svg")
                                           .attr("width", w)
                                           .attr("height", h);
-          
+
 
           // Build axes! (These are kind of annoying, actually...)
           // Specify the axis scale and general position
@@ -136,31 +170,31 @@
                             .scale(xScale)
                             .orient("bottom")
                             .ticks(5);
-          
+
           // Add a graphics element to hold the axis we created above (xAxis)
           var xAxisG = svg.append('g')
                           .attr('class', 'axis')
                           .attr('transform', 'translate(0, ' + (h - yOffset) + ')')
                           .call(xAxis);
-          
+
           // Add a label that shows the user what that axis represents
           var xLabel = svg.append("text")
                           .attr('class', 'label')
                           .attr('x', (w)/2)
                           .attr('y', h - margin/2)
                           .text("index");
-          
+
           // Repeat for the y-axis
           var yAxis = d3.svg.axis()
                             .scale(yScale)
                             .orient("left")
                             .ticks(5);
-          
+
           var yAxisG = svg.append('g')
                           .attr('class', 'axis')
                           .attr('transform', 'translate(' + xOffset + ', 0)')
                           .call(yAxis);
-          
+
           var yLabel = svg.append("text")
                           .attr('class', 'label')
                           .attr('x', xOffset/2)
@@ -189,7 +223,7 @@
               .attr('x', function(d){ return xScale(d.idx) })
               .attr('y', function(d){ return yScale(d.x)})
               .append('svg:title') // tooltip
-              .text(function(d) { return "(x val="+d.x+")"});            
+              .text(function(d) { return "(x val="+d.x+")"});
 
           // Prettier tooltip
           bar.on('mouseover', function(d){
@@ -208,7 +242,7 @@
                   newData.forEach(function(d,idx){
                       d.x = +d.x;
                       d.idx = idx;
-                  }); 
+                  });
 
                   // Update the axes
                   xScale.domain([0, newData.length])
@@ -230,16 +264,16 @@
               });
           };
 
-      }); 
+      });
 
 
       // Put your part three & four code here *********************** Scatterplot
       d3.csv(initDataset, function(csvData){
           var data = csvData;
-      
+
           // Define scales that convert from the data domain to screen coordinates
           // This will define scales that convert values
-          // from our data domain (.domain([min data value, max data value]) 
+          // from our data domain (.domain([min data value, max data value])
           // into screen coordinates (.range([min pixel value, max pixel value])).
           // Using linear scales maps the data directly to the pixel values using
           // pixel_val = c * data_val, where c is a constant computed by d3.
@@ -248,18 +282,18 @@
                                       return parseFloat(d.x);
                                   })+1])
                           .range([xOffset + margin, w - margin]);
-          
+
           var yScale = d3.scale.linear()
                           .domain([0, d3.max(data, function(d) {
-                                      return parseFloat(d.y); 
+                                      return parseFloat(d.y);
                                   })+1])
                           .range([h - yOffset - margin, margin]);
-          
+
           // Next, we will create an SVG element to contain our visualization.
           var svg = d3.select("#scatterplot").append("svg:svg")
                                           .attr("width", w)
                                           .attr("height", h);
-          
+
 
           // Build axes! (These are kind of annoying, actually...)
           // Specify the axis scale and general position
@@ -267,31 +301,31 @@
                             .scale(xScale)
                             .orient("bottom")
                             .ticks(5);
-          
+
           // Add a graphics element to hold the axis we created above (xAxis)
           var xAxisG = svg.append('g')
                           .attr('class', 'axis')
                           .attr('transform', 'translate(0, ' + (h - yOffset) + ')')
                           .call(xAxis);
-          
+
           // Add a label that shows the user what that axis represents
           var xLabel = svg.append("text")
                           .attr('class', 'label')
                           .attr('x', (w+xOffset)/2)
                           .attr('y', h - margin/2)
                           .text(xVal);
-          
+
           // Repeat for the y-axis
           var yAxis = d3.svg.axis()
                             .scale(yScale)
                             .orient("left")
                             .ticks(5);
-          
+
           var yAxisG = svg.append('g')
                           .attr('class', 'axis')
                           .attr('transform', 'translate(' + xOffset + ', 0)')
                           .call(yAxis);
-          
+
           var yLabel = svg.append("text")
                           .attr('class', 'label')
                           .attr('x', xOffset/2)
@@ -311,7 +345,7 @@
                   return "<strong>x = </strong><span style='color:"+hoverColor+"'>"+d.x+"</span></br><strong>y = </strong><span style='color:"+hoverColor+"'>"+d.y+"</span>";
               })
 
-          svg.call(tip);            
+          svg.call(tip);
 
           // Update our selection
           point
@@ -348,11 +382,11 @@
                   // Update the axis
                   xScale.domain([0, d3.max(newData, function(d) {
                                       return parseFloat(d.x);
-                                  })+1])                  
+                                  })+1])
                   xAxis.scale(xScale);
                   xAxisG.call(xAxis);
                   yScale.domain([0, d3.max(newData, function(d) {
-                                      return parseFloat(d.y); 
+                                      return parseFloat(d.y);
                                   })+1])
                   yAxis.scale(yScale);
                   yAxisG.call(yAxis);
@@ -411,7 +445,7 @@
           }
           var b1 = term1 / term2;
           var b0 = y_mean - (b1 * x_mean);
-          // perform regression 
+          // perform regression
 
           yhat = [];
           // fit line using coeffs
@@ -450,9 +484,8 @@
           }
         }
       }
-      
-  </script>
+
+  </script> -->
+
 </body>
-
-
 </html>
