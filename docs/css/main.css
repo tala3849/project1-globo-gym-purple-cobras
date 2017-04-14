@@ -14,6 +14,14 @@ input:checked+#onNetworkSwitch{
   background-color:#f58233;
 }
 
+#onNetworkSwitch.switch {
+  color:#f58233;
+}
+
+#offNetworkSwitch.switch {
+  color:#005d77;
+}
+
 input:checked+#offNetworkSwitch{
   background-color:#005d77;
 }
