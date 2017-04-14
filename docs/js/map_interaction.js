@@ -62,7 +62,7 @@ var wait = setInterval(function(){
     // });
 
     document.getElementById('max_cost').addEventListener("change", function(e){
-      max_cost = Number(e.target.value);
+      max_cost = Math.exp(Number(e.target.value));
       document.getElementById('max_cost_val').innerHTML = '$' + makeBigNumbersPretty(max_cost)
 
       mapFilters.updateFilter('<=','cost',max_cost)

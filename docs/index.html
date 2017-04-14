@@ -59,10 +59,51 @@
         <label> -->
           Maximum Building Cost
           <div class='range range--s'>
-            <input id="max_cost" type='range' step="10000" min="100"/>
+            <input id="max_cost" type='range' step="0.1" min="4.6"/>
             <p class="pr6" id='max_cost_val'></p>
           </div>
         </label>
+
+        <h5 class="txt-h5 border-b mb6">Opportunities</h5>
+        <label class='switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleAllOpportunity"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">Any Opportunities</span>
+        </label><br>
+        <label class='ml12 switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_1')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">1 - Working</span>
+        </label><br>
+        <label class='ml12 switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_2')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">2 - Best Case</span>
+        </label><br>
+        <label class='ml12 switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_3')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">3 - Committed</span>
+        </label><br>
+        <label class='ml12 switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_4')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">4 - Closed</span>
+        </label><br>
+        <label class='ml12 switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_5')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">5  - Accepted</span>
+        </label><br>
+        <label class='switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_6')"/>
+          <div class='switch opp_switch'></div>
+            <span class="px6">Closed - Lost</span>
+        </label>
+
+
+
+
       </div>
     </div>
     <script src="js/map_base.js"></script>
@@ -103,7 +144,7 @@
       pageData = new DataObject({dir: directory})
       pageData.load()
       var pause = setInterval(function(){
-        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products){
+        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products && pageData.services){
           clearInterval(pause);
           console.log("Data loaded, data available inside of pageData Object")
 
