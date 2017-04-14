@@ -24,7 +24,7 @@ function createProductsVis(){
         d.product = d["Product Group"];
         d.idx = idx;
         d.count = +d["Count"];
-        console.log(idx, d.product, d.count)
+        // console.log(idx, d.product, d.count)
     });
 
     // Define scales that convert from the data domain to screen coordinates
@@ -77,7 +77,7 @@ function createProductsVis(){
 				    .attr("transform", "rotate(45)")
 				    .style("text-anchor", "start");
 	// console.log("X axis width:",d3.select('#xaxis').node().getBoundingClientRect().width)
-    
+
     d3.select("#barchartsvg")
     		.attr("width", d3.select('#barchart').node().getBoundingClientRect().width)
 

@@ -10,7 +10,7 @@ function makeBigNumbersPretty(num){
   if (num > 1000){
     return (num/1000).toFixed(1) + "K"
   }
-  return num
+  return num.toFixed(0)
 }
 
 function toggleVis(btn, id){
@@ -23,23 +23,21 @@ var DataObject = function(config){
 
   this.onNetworkBuildings  = false
   this.offNetworkBuildings = false
-  this.products = true
 
   this.load = function(){
     console.log("Loading data from directory: ",config.dir)
     var that = this
 
-    d3.json(this.dir+'/offNetwork.geojson', function(offNetworkBuildings){
+    d3.json(this.dir+'/offNetwork_buildings_sm.geojson', function(offNetworkBuildings){
       console.log("Loaded Off Network buildings")
       that.offNetworkBuildings = offNetworkBuildings
       that.max_build_cost = d3.max(offNetworkBuildings.features.map(function(x){return x.properties.cost}))
-      document.getElementById('max_cost').max   = that.max_build_cost
-      document.getElementById('max_cost').value = that.max_build_cost
+      document.getElementById('max_cost').max   = Math.log(that.max_build_cost)
+      document.getElementById('max_cost').value = Math.log(that.max_build_cost)
       document.getElementById('max_cost_val').innerHTML = '$' + makeBigNumbersPretty(that.max_build_cost)
-
     });
 
-    d3.json(that.dir+'/onNetwork.geojson', function(onNetworkBuildings){
+    d3.json(that.dir+'/onNetwork_buildings_sm.geojson', function(onNetworkBuildings){
       console.log("Loaded On Network buildings")
       that.onNetworkBuildings = onNetworkBuildings
     })

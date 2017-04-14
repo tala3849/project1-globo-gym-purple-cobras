@@ -59,7 +59,7 @@
         <label> -->
           Maximum Building Cost
           <div class='range range--s'>
-            <input id="max_cost" type='range' step="10000" min="100"/>
+            <input id="max_cost" type='range' step="0.1" min="4.6"/>
             <p class="pr6" id='max_cost_val'></p>
           </div>
         </label>
@@ -103,7 +103,7 @@
       pageData = new DataObject({dir: directory})
       pageData.load()
       var pause = setInterval(function(){
-        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products){
+        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products && pageData.services){
           clearInterval(pause);
           console.log("Data loaded, data available inside of pageData Object")
 

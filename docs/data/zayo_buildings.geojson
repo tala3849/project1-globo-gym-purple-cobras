@@ -2,23 +2,42 @@
     "features": [
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     3
                 ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 5,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 12755,
+                "opp_1": 3,
+                "IP Services": 1,
                 "sites": [
                     3
                 ],
-                "opp_3": 0,
-                "cost": 71994.9,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "opp_lost": 1,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -31,23 +50,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 15,
+                "Ethernet": 55,
+                "zColo": 29,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     275
                 ],
+                "Wavelengths - Long Haul": 45,
+                "SONET": 81,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 129,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 10,
+                "b_rev": 776419,
+                "opp_1": 86,
+                "IP Services": 35,
                 "sites": [
                     286
                 ],
-                "opp_3": 0,
-                "cost": 3430141.0,
-                "opportunity": [
-                    0
-                ],
-                "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "opp_4": 1,
+                "opp_lost": 45,
+                "opp_5": 52,
+                "FTT - Wavelengths": 0,
+                "ISP": 557,
+                "opp_3": 21,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -60,23 +98,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 5,
+                "Ethernet": 9,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     46
                 ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 15,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 36666,
+                "opp_1": 17,
+                "IP Services": 4,
                 "sites": [
                     47
                 ],
-                "opp_3": 0,
-                "cost": 1105205.0,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "opp_lost": 9,
+                "opp_5": 8,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 3,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -89,23 +146,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 4,
+                "Ethernet": 7,
+                "zColo": 157,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     73
                 ],
+                "Wavelengths - Long Haul": 3,
+                "SONET": 16,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 3,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 44,
+                "Dark Fiber - Long Haul": 20,
+                "ZPS": 0,
+                "Wavelengths - Metro": 1,
+                "b_rev": 424057,
+                "opp_1": 25,
+                "IP Services": 2,
                 "sites": [
                     74
                 ],
-                "opp_3": 0,
-                "cost": 1156694.0,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "opp_lost": 3,
+                "opp_5": 15,
+                "FTT - Wavelengths": 0,
+                "ISP": 6,
+                "opp_3": 2,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -118,23 +194,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 2,
+                "Ethernet": 0,
+                "zColo": 3,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     22
                 ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 13201,
+                "opp_1": 12,
+                "IP Services": 0,
                 "sites": [
                     22
                 ],
-                "opp_3": 0,
-                "cost": 656805.6000000001,
-                "opportunity": [
-                    0
-                ],
-                "opp_4": 0,
+                "opp_4": 2,
+                "opp_lost": 8,
                 "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 2,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -147,23 +242,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 1,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     6
                 ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1011,
+                "opp_1": 4,
+                "IP Services": 0,
                 "sites": [
                     6
                 ],
-                "opp_3": 0,
-                "cost": 81625.2,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
+                "opp_lost": 2,
                 "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -176,23 +290,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 4,
+                "Ethernet": 9,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     49
                 ],
+                "Wavelengths - Long Haul": 5,
+                "SONET": 34,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 34,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 91862,
+                "opp_1": 8,
+                "IP Services": 2,
                 "sites": [
                     51
                 ],
+                "opp_4": 1,
+                "opp_lost": 7,
+                "opp_5": 10,
+                "FTT - Wavelengths": 0,
+                "ISP": 30,
                 "opp_3": 0,
-                "cost": 938491.8000000009,
-                "opportunity": [
-                    0
-                ],
-                "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -205,23 +338,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 35,
+                "Ethernet": 78,
+                "zColo": 1019,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     406
                 ],
+                "Wavelengths - Long Haul": 54,
+                "SONET": 3,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 1,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 239,
+                "Dark Fiber - Long Haul": 8,
+                "ZPS": 0,
+                "Wavelengths - Metro": 23,
+                "b_rev": 1282872,
+                "opp_1": 229,
+                "IP Services": 28,
                 "sites": [
                     416
                 ],
-                "opp_3": 0,
-                "cost": 10977408.0,
-                "opportunity": [
-                    0
-                ],
-                "opp_4": 0,
-                "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "opp_4": 15,
+                "opp_lost": 118,
+                "opp_5": 84,
+                "FTT - Wavelengths": 0,
+                "ISP": 67,
+                "opp_3": 54,
+                "Managed WAN-LAN": 1
             },
             "geometry": {
                 "coordinates": [
@@ -234,23 +386,42 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 1,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     3
                 ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 5150,
+                "opp_1": 2,
+                "IP Services": 0,
                 "sites": [
                     3
                 ],
-                "opp_3": 0,
-                "cost": 55079.399999999994,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
+                "opp_lost": 0,
                 "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
@@ -263,28 +434,4367 @@
         },
         {
             "properties": {
-                "netStat": 1,
-                "opp_1": 0,
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
                 "accounts": [
                     5
                 ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 23142,
+                "opp_1": 0,
+                "IP Services": 0,
                 "sites": [
                     5
                 ],
-                "opp_3": 0,
-                "cost": 93219.0,
-                "opportunity": [
-                    0
-                ],
                 "opp_4": 0,
+                "opp_lost": 0,
                 "opp_5": 0,
-                "opp_0": 0,
-                "opp_2": 0
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
             },
             "geometry": {
                 "coordinates": [
                     -96.8034159,
                     32.816587
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 4,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    44
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 7,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 1,
+                "b_rev": 20665,
+                "opp_1": 6,
+                "IP Services": 0,
+                "sites": [
+                    45
+                ],
+                "opp_4": 1,
+                "opp_lost": 10,
+                "opp_5": 6,
+                "FTT - Wavelengths": 0,
+                "ISP": 3,
+                "opp_3": 4,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.79855,
+                    32.778334
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -97.29303359999999,
+                    32.842872
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 168030.0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 11637,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.7806839,
+                    32.79903
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    21
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 111,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 12092,
+                "opp_1": 2,
+                "IP Services": 0,
+                "sites": [
+                    21
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.996067,
+                    39.745857
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 4,
+                "Ethernet": 3,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    31
+                ],
+                "Wavelengths - Long Haul": 3,
+                "SONET": 69,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 1,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 70614,
+                "opp_1": 8,
+                "IP Services": 0,
+                "sites": [
+                    32
+                ],
+                "opp_4": 0,
+                "opp_lost": 13,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 4,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.97949960000001,
+                    39.745886
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 21,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    9
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 6,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 1,
+                "b_rev": 9241,
+                "opp_1": 9,
+                "IP Services": 0,
+                "sites": [
+                    9
+                ],
+                "opp_4": 1,
+                "opp_lost": 1,
+                "opp_5": 25,
+                "FTT - Wavelengths": 0,
+                "ISP": 4,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.996223,
+                    39.745214000000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 63693.7,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.89778000000001,
+                    39.717667999999996
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -105.017944,
+                    39.742626
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 1,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 36880,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.856202,
+                    39.544658
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    3
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1430,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -97.2651205,
+                    32.75009
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 2,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    8
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 6,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 13503,
+                "opp_1": 0,
+                "IP Services": 1,
+                "sites": [
+                    8
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.366692,
+                    33.847346
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    17
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1417,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    17
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.383726,
+                    33.765195
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 22249.6,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.360744,
+                    33.9708909
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    4
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.33989629999999,
+                    33.928535600000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    3
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 5,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 9825,
+                "opp_1": 7,
+                "IP Services": 1,
+                "sites": [
+                    3
+                ],
+                "opp_4": 0,
+                "opp_lost": 4,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -97.252404,
+                    32.979638
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 164849.0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -97.05270920000001,
+                    32.7018237
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 26547.1,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.9028449,
+                    39.604336100000005
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 1,
+                "zColo": 0,
+                "Live Video": 1,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    12
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 1,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 5204,
+                "opp_1": 8,
+                "IP Services": 0,
+                "sites": [
+                    12
+                ],
+                "opp_4": 0,
+                "opp_lost": 3,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.939031,
+                    39.578627000000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    15
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1652,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    15
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.384242,
+                    33.756512
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    8
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    8
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.459562,
+                    33.905793
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 1,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 835,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.256309,
+                    33.930506
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    20
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 11417,
+                "opp_1": 5,
+                "IP Services": 0,
+                "sites": [
+                    22
+                ],
+                "opp_4": 0,
+                "opp_lost": 6,
+                "opp_5": 5,
+                "FTT - Wavelengths": 0,
+                "ISP": 3,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.73684300000001,
+                    33.005724
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 3,
+                "Ethernet": 6,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    28
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 8,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 3,
+                "b_rev": 39260,
+                "opp_1": 3,
+                "IP Services": 2,
+                "sites": [
+                    28
+                ],
+                "opp_4": 0,
+                "opp_lost": 3,
+                "opp_5": 8,
+                "FTT - Wavelengths": 0,
+                "ISP": 11,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.871178,
+                    32.9114239
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 50775.0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.94004609999999,
+                    32.8879831
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 7,
+                "Ethernet": 18,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    47
+                ],
+                "Wavelengths - Long Haul": 2,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 42,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 4,
+                "b_rev": 113663,
+                "opp_1": 11,
+                "IP Services": 1,
+                "sites": [
+                    48
+                ],
+                "opp_4": 0,
+                "opp_lost": 10,
+                "opp_5": 15,
+                "FTT - Wavelengths": 0,
+                "ISP": 9,
+                "opp_3": 1,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.0608807,
+                    34.035421299999996
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 18,
+                "Ethernet": 6,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    66
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 36,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 1,
+                "b_rev": 152315,
+                "opp_1": 22,
+                "IP Services": 4,
+                "sites": [
+                    69
+                ],
+                "opp_4": 0,
+                "opp_lost": 22,
+                "opp_5": 8,
+                "FTT - Wavelengths": 0,
+                "ISP": 15,
+                "opp_3": 7,
+                "Managed WAN-LAN": 1
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.42146109999999,
+                    33.7775391
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 131224.8,
+                "Media & Gaming": 0,
+                "accounts": [
+                    7
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 22,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 5,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 17862,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    7
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.798705,
+                    32.778886
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 20953.3,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.277378,
+                    34.0553694
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 15,
+                "Ethernet": 54,
+                "zColo": 28,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    162
+                ],
+                "Wavelengths - Long Haul": 77,
+                "SONET": 53,
+                "FTT - SONET": 1,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 7,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 112,
+                "Dark Fiber - Long Haul": 13,
+                "ZPS": 0,
+                "Wavelengths - Metro": 14,
+                "b_rev": 1220198,
+                "opp_1": 90,
+                "IP Services": 7,
+                "sites": [
+                    167
+                ],
+                "opp_4": 1,
+                "opp_lost": 46,
+                "opp_5": 32,
+                "FTT - Wavelengths": 0,
+                "ISP": 386,
+                "opp_3": 10,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.995682,
+                    39.74556
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 40970.0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.81940209999999,
+                    32.6030284
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    12
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 3,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 15,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 87787,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    13
+                ],
+                "opp_4": 0,
+                "opp_lost": 2,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.513244,
+                    33.884115
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    13
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 8,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 58432,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    13
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.4659556,
+                    33.91
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 8,
+                "Ethernet": 3,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    49
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 23,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 64487,
+                "opp_1": 24,
+                "IP Services": 4,
+                "sites": [
+                    49
+                ],
+                "opp_4": 4,
+                "opp_lost": 10,
+                "opp_5": 9,
+                "FTT - Wavelengths": 0,
+                "ISP": 18,
+                "opp_3": 4,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.38769,
+                    33.758884
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    11
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 3,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 6329,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    11
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.440665,
+                    33.680383
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    9
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 2,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1988,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    9
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.33261850000001,
+                    33.94521760000001
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 13,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    22
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 2,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 20,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 38778,
+                "opp_1": 0,
+                "IP Services": 3,
+                "sites": [
+                    24
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.213628,
+                    33.936733000000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 3368,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.359444,
+                    34.020176899999996
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    12
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 6,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 6142,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    12
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3854818,
+                    33.7814526
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 53232.0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.94086109999999,
+                    32.870155
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 133175.36,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 2,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.2267439,
+                    33.9381625
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 165,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3801343,
+                    33.749474799999994
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 35292.7,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.84101940000001,
+                    39.7754201
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 25890.16,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3450625,
+                    33.9188617
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.983787,
+                    39.916165
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 8,
+                "zColo": 3,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    60
+                ],
+                "Wavelengths - Long Haul": 3,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 36,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 70307,
+                "opp_1": 16,
+                "IP Services": 2,
+                "sites": [
+                    64
+                ],
+                "opp_4": 0,
+                "opp_lost": 10,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 152,
+                "opp_3": 1,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3908998,
+                    33.7559351
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 2,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    8
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 1,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 224,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    8
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.796669,
+                    32.782501
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 55,
+                "opp_1": 3,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 1,
+                "opp_lost": 5,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 1,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -105.03425790000001,
+                    39.5500631
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 1,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 4,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.235613,
+                    34.095163899999996
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 10373,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.238293,
+                    34.096125
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 2,
+                "Ethernet": 45,
+                "zColo": 1251,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    497
+                ],
+                "Wavelengths - Long Haul": 2,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 312,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 75,
+                "Dark Fiber - Long Haul": 2,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 2499299,
+                "opp_1": 24,
+                "IP Services": 15,
+                "sites": [
+                    504
+                ],
+                "opp_4": 2,
+                "opp_lost": 20,
+                "opp_5": 12,
+                "FTT - Wavelengths": 0,
+                "ISP": 4,
+                "opp_3": 8,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.86654820000001,
+                    39.5643596
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 3,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    16
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 8,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 23315,
+                "opp_1": 7,
+                "IP Services": 1,
+                "sites": [
+                    16
+                ],
+                "opp_4": 0,
+                "opp_lost": 3,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.715742,
+                    32.966302
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 12,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    4
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 56116,
+                "opp_1": 3,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.830688,
+                    39.560789
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.97196799999999,
+                    39.770264000000005
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 24805.4,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 2189,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.82990500000001,
+                    39.771509
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 7,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    26
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 9,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 17615,
+                "opp_1": 0,
+                "IP Services": 2,
+                "sites": [
+                    26
+                ],
+                "opp_4": 1,
+                "opp_lost": 2,
+                "opp_5": 4,
+                "FTT - Wavelengths": 0,
+                "ISP": 7,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.272632,
+                    34.063368
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 36951.8,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.16454859999999,
+                    34.01728189999999
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 1,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.481601,
+                    33.865378
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 9,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 1,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 14,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 65230,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 2,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.503055,
+                    33.829028
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 32628.7,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -105.02127,
+                    39.734605
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 1,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 1,
+                "b_rev": 26437,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.0572672,
+                    34.0374641
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    7
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 4904,
+                "opp_1": 3,
+                "IP Services": 0,
+                "sites": [
+                    7
+                ],
+                "opp_4": 0,
+                "opp_lost": 2,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.267566,
+                    34.0826226
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.2474556,
+                    34.096028000000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3529176,
+                    33.9156476
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 1,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 12688,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3368988,
+                    33.9218424
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 21180.7,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 5843,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.26810400000001,
+                    34.094361
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    8
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 5,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 4538,
+                "opp_1": 3,
+                "IP Services": 0,
+                "sites": [
+                    9
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.387215,
+                    33.7817533
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    4
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.387112,
+                    33.7809085
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 3886,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3865773,
+                    33.752767600000006
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    3
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 3,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 20891,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.4628196,
+                    33.884987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 2,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3545809,
+                    33.9347725
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    1
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    1
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.466378,
+                    33.888875
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 4,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 2,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1556,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 1,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.420197,
+                    33.729225
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 32,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    7
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.39204409999999,
+                    33.756917200000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 601,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.4117437,
+                    33.782245700000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    11
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 1,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 6,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 17569,
+                "opp_1": 1,
+                "IP Services": 0,
+                "sites": [
+                    12
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.2906847,
+                    34.0315054
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 26695.4,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.1161,
+                    33.92948
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    3
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 128,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    3
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3466296,
+                    33.9313995
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 128,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3466516,
+                    33.9313851
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 3,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    9
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 10,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 25981,
+                "opp_1": 2,
+                "IP Services": 1,
+                "sites": [
+                    9
+                ],
+                "opp_4": 0,
+                "opp_lost": 1,
+                "opp_5": 4,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.31945400000001,
+                    34.0361583
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 2,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    9
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 26,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 33705,
+                "opp_1": 2,
+                "IP Services": 0,
+                "sites": [
+                    10
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 2,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.38855699999999,
+                    33.783427
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    10
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    10
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 1,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3530428,
+                    33.933876500000004
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 224,
+                "opp_1": 2,
+                "IP Services": 0,
+                "sites": [
+                    6
+                ],
+                "opp_4": 0,
+                "opp_lost": 3,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 1,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.465361,
+                    33.889795
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 5,
+                "Ethernet": 2,
+                "zColo": 368,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    202
+                ],
+                "Wavelengths - Long Haul": 12,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 57,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 18,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 5,
+                "b_rev": 760048,
+                "opp_1": 18,
+                "IP Services": 2,
+                "sites": [
+                    203
+                ],
+                "opp_4": 0,
+                "opp_lost": 14,
+                "opp_5": 16,
+                "FTT - Wavelengths": 0,
+                "ISP": 4,
+                "opp_3": 12,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.4256845,
+                    33.733839200000006
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    6
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 4,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 12640,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    7
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.35232099999999,
+                    33.930757
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 58270,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.27830970000001,
+                    34.051286299999994
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    4
+                ],
+                "Wavelengths - Long Haul": 1,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 1,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 1607,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    4
+                ],
+                "opp_4": 0,
+                "opp_lost": 2,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.4057855,
+                    33.7855586
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 1,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    9
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 19,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 26081,
+                "opp_1": 9,
+                "IP Services": 1,
+                "sites": [
+                    9
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 2,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.481658,
+                    33.925308
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    5
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    5
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 2,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.1598369,
+                    34.057677000000005
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 1,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 0,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 1,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 0,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 0,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 1,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.34947840000001,
+                    33.9207063
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "FTT - Small Cell": 0,
+                "Managed Cyber Security": 0,
+                "opp_0": 0,
+                "opp_2": 0,
+                "Ethernet": 0,
+                "zColo": 0,
+                "Live Video": 0,
+                "cost": 20375.6,
+                "Media & Gaming": 0,
+                "accounts": [
+                    2
+                ],
+                "Wavelengths - Long Haul": 0,
+                "SONET": 0,
+                "FTT - SONET": 0,
+                "netStat": 0,
+                "Cloud": 0,
+                "FTT - Ethernet": 0,
+                "FTT - Dark Fiber": 1,
+                "Dark Fiber - Metro": 0,
+                "Dark Fiber - Long Haul": 0,
+                "ZPS": 0,
+                "Wavelengths - Metro": 0,
+                "b_rev": 27740,
+                "opp_1": 0,
+                "IP Services": 0,
+                "sites": [
+                    2
+                ],
+                "opp_4": 0,
+                "opp_lost": 0,
+                "opp_5": 0,
+                "FTT - Wavelengths": 0,
+                "ISP": 0,
+                "opp_3": 0,
+                "Managed WAN-LAN": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3056806,
+                    34.055834600000004
                 ],
                 "type": "Point"
             },
