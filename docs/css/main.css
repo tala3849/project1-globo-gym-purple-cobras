@@ -10,26 +10,26 @@ body{
 /*
   Checkbox overrides
 */
-input:checked+#onNetworkSwitch{
+input:checked+.onNetworkSwitch{
   background-color:#f58233;
 }
 
-div.opp_switch{
-  color:#696571;
+div.onNetworkSwitch {
+  color:#f58233;
+}
+
+input:checked+.offNetworkSwitch{
+  background-color:#005d77;
+}
+
+div.offNetworkSwitch {
+  color:#005d77;
 }
 
 input:checked+.opp_switch{
   background-color:#696571;
 }
 
-#onNetworkSwitch.switch {
-  color:#f58233;
-}
-
-#offNetworkSwitch.switch {
-  color:#005d77;
-}
-
-input:checked+#offNetworkSwitch{
-  background-color:#005d77;
+div.opp_switch{
+  color:#696571;
 }
