@@ -18,6 +18,10 @@ var MapFilters = function(){
     this.filters.push(arr)
   }
 
+  this.hasFilter = function(value){
+    return this.filters.map(function(x){return x[1]}).indexOf(value)
+  }
+
   this.updateFilter = function(comp,prop,val){
     var new_filters = [];
     if(!this.filters.length){
@@ -46,10 +50,27 @@ var MapFilters = function(){
 var mapFilters = new MapFilters()
 
 function updateFiltersOnAllLayers(){
+  
   activeMapLayers.forEach(function(layerID){
     map.setFilter(layerID, mapFilters.getFilters())
   })
 }
+
+
+
+function toggleOpportunity(opp_level){
+  console.log("opportunity: "+opp_level)
+
+  if(mapFilters.hasFilter(opp_level)){
+    mapFilters.addFilter('>', opp_level, 1)
+    updateFiltersOnAllLayers()
+  }else{
+    mapFilters.updateFilters('>=', opp_level, 0)
+    updateFiltersOnAllLayers()
+  }
+}
+
+
 
 var wait = setInterval(function(){
   if(map.loaded()){
@@ -68,7 +89,9 @@ var wait = setInterval(function(){
       mapFilters.updateFilter('<=','cost',max_cost)
       updateFiltersOnAllLayers()
     });
+    console.log("map loaded, clearing interaction pause")
+    clearInterval(wait)
   }else{
-    console.log('waiting on map')
+    console.log('waiting on map to load interaction')
   }
 },500)
