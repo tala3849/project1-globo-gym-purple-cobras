@@ -22,7 +22,7 @@ body {
 
 .rect {
     fill: #f58233;
-    width: 20px;
+    /*width: 20px;*/
 }
 
 .label {
