@@ -46,7 +46,12 @@ var DataObject = function(config){
 
     // uncomment this...
     d3.csv(that.dir+'/services_per_product.csv',function(csv){
+      that.services = csv;
+    })
+
+    d3.csv(that.dir+'/buildings_per_product.csv',function(csv){
       that.products = csv;
     })
+
   }
 }

@@ -9,7 +9,7 @@ function createProductsVis(){
     var height = 600; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
-    var margin = 20; // Margin around visualization
+    var margin = 5; // Margin around visualization
     var vals = ['x', 'y']; // List of data attributes
     var xVal = vals[0]; // Value to plot on x-axis
     var yVal = vals[1]; // Value to plot on y-axis
@@ -18,7 +18,7 @@ function createProductsVis(){
     var zayoOrange = '#f58233'
     var zayoTeal = '#005d77'
 
-    var length = 12;
+    var length = 20;
     var data = pageData.products.slice(0,length);
     data.forEach(function(d,idx){
         d.product = d["Product Group"];
@@ -47,14 +47,14 @@ function createProductsVis(){
 
     // Next, we will create an SVG element to contain our visualization.
     var svg = d3.select("#barchart").append("svg:svg")
-                                    .attr("width", width+30)
-                                    .attr("height", height);
+                                    .attr("width", width)
+                                    .attr("height", height)
+                                    .attr("id","barchartsvg");
 
 
     // Build axes! (These are kind of annoying, actually...)
     // Specify the axis scale and general position
     var xAxis = d3.svg.axis()
-    				  // .attr("id","xaxis")
                       .scale(xScale)
                       .orient("bottom")
                       // .ticks(5);
@@ -67,6 +67,7 @@ function createProductsVis(){
 
     var xAxisG = svg.append('g')
                     .attr('class', 'axis')
+				    .attr('id','xaxis')
                     .attr("transform", "translate(0," + (height-yOffset) + ")")
                     .call(xAxis)
 				  .selectAll("text")
@@ -75,12 +76,16 @@ function createProductsVis(){
 				    .attr("dy", ".35em")
 				    .attr("transform", "rotate(45)")
 				    .style("text-anchor", "start");
+	// console.log("X axis width:",d3.select('#xaxis').node().getBoundingClientRect().width)
+    
+    d3.select("#barchartsvg")
+    		.attr("width", d3.select('#barchart').node().getBoundingClientRect().width)
 
     // Add a label that shows the user what that axis represents
     var xLabel = svg.append("text")
                     .attr('class', 'label')
                     .attr('x', (width)/2 + 2*margin)
-                    .attr('y', height - margin/2)
+                    .attr('y', height-yOffset+d3.select('#xaxis').node().getBoundingClientRect().height) //puts axis label below individual labels
                     .text("Product")
 
     // Repeat for the y-axis
@@ -96,9 +101,12 @@ function createProductsVis(){
 
     var yLabel = svg.append("text")
                     .attr('class', 'label')
-                    .attr('x', xOffset/2)
-                    .attr('y', height/2)
-                    .text("Count");
+                    .attr('x', -(height-yOffset)/2)
+                    .attr('y', 10)
+				    // .attr("dy", ".35em")
+				    .attr("transform", "rotate(270)")
+				    .style("text-anchor", "start")
+                    .text("# Buildings");
 
     // Now, we will start actually building our scatterplot!
     var bar = svg.selectAll('.rect') // Select elements
@@ -110,7 +118,7 @@ function createProductsVis(){
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-            return "<span style='color:"+zayoOrange+"'>"+d.product+"</span>";
+            return "<span style='color:white'>"+d.product+"</br>"+d.count+" buildings</span>";
         })
 
     svg.call(tip);
