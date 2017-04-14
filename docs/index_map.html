@@ -31,67 +31,59 @@
     <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3>
   </header>
 
-<!-- Section 1: Map -->
-  <div class="grid grid--gut12">
-    <div class="col col--1"></div>
+  <section id="map">
+    <div class="grid grid--gut12">
+      <div class="col col--1"></div>
 
-    <div class="col col--7 pl0" id="map"></div>
+      <div class="col col--7 pl0" id="map"></div>
 
-    <div id="map-interaction" class="col col--3" style="opacity: 0.5;" >
-      <h5 class="txt-h5 border-b mb6">Layers</h5>
-      <label class='switch-container'>
-        <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
-        <div class='switch'></div>
-          <span class="px6">On Network</span>
-      </label><br>
-      <label class='switch-container'>
-        <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
-        <div class='switch switch'></div>
-          <span class="px6">Off Network</span>
-      </label><br>
-      <label>
-        Minimum Building Cost
-        <div class='range range--s'>
-          <input id="min_cost" type='range' step="500000" value="0" min="0" max="20000000"/>
-          <p class="pl6" id='min_cost_val'>0</p>
+      <div id="map-interaction" class="col col--3" style="opacity: 0.5;" >
+        <h5 class="txt-h5 border-b mb6">Layers</h5>
+        <label class='switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
+          <div class='switch'></div>
+            <span class="px6">On Network</span>
+        </label><br>
+        <label class='switch-container'>
+          <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
+          <div class='switch switch'></div>
+            <span class="px6">Off Network</span>
+        </label><br>
+        <label>
+          Minimum Building Cost
+          <div class='range range--s'>
+            <p class="pr6" id='min_cost_val'>0</p>
+            <input id="min_cost" type='range' step="500000" value="0" min="0" max="20000000"/>
+          </div>
+        </label>
+        <label>
+          Maximum Building Cost
+          <div class='range range--s'>
+            <p class="pr6" id='max_cost_val'></p>
+            <input id="max_cost" type='range' step="10000" min="100"/>
+          </div>
+        </label>
+      </div>
+    </div>
+    <script src="js/map_base.js"></script>
+    <script src="js/map_interaction.js"></script>
+
+    <div id="map-vis-description">
+      <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
+      <p id='map-desc-prose' class="prose" style="display:none;">
+        Description of how this map works and what it shows
+      </p>
+    </div>
+  </section>
+
+  <!-- <div>
+    <div id='product' class="bg-gray">
+      <p>Products</p>
+        <div id="barchart">
         </div>
-      </label>
-      <label>
-        Maximum Building Cost
-        <div class='range range--s'>
-          <input id="max_cost" type='range' step="10000" min="100"/>
-          <p class="pl6" id='max_cost_val'></p>
-        </div>
-      </label>
     </div>
   </div>
-  <script src="js/map_base.js"></script>
-  <script src="js/map_interaction.js"></script>
-
-  <div id="map-vis-description">
-    <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
-    <p id='map-desc-prose' class="prose" style="display:none;">
-      Description of how this map works and what it shows
-    </p>
-  </div>
-
-<!-- Section 2: Products -->
-  <div class='grid'>
-    <div id='product' class="col col--6">
-      <h4 class="txt-h4 border-b mb6">Products</h4>
-        <div id="barchart"></div>
-    </div>
-
-
-<!-- Section 3: Markets -->    
-    <div id='product' class="col col--6">
-      <h4 class="txt-h4 border-b mb6">Markets</h4>
-        <div id="barchart"></div>
-    </div>
-  </div>
-
-
-  <script src="js/products.js"></script>
+  <script src="js/products.js"></script> -->
 
   <script>
     var pageData
@@ -111,7 +103,7 @@
           loadMap();
 
           //Call Products VIs
-          createProductsVis();
+          // createProductsVis();
 
         }else {
           console.log("Data Still loading, waiting for 0.5 seconds")

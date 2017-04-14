@@ -8,44 +8,67 @@ function toggleMapLayerVis(layerID){
   ( map.getLayoutProperty(layerID,'visibility')=='visible'? 'none' : 'visible') )
 }
 
-function applyMapFilterToAllLayers(prop,val){
+var MapFilters = function(){
+
+  this.all = 'all'
+
+  this.filters = []
+
+  this.addFilter = function(arr){
+    this.filters.push(arr)
+  }
+
+  this.updateFilter = function(comp,prop,val){
+    var new_filters = [];
+    if(!this.filters.length){
+      this.filters.push([comp,prop,val])
+      return;
+    }
+    this.filters.forEach(function(filter){
+      if(filter[0]==comp && filter[1]==prop){
+        new_filters.push([comp,prop,val])
+      }else{
+        new_filters.push(filter)
+      }
+    })
+    this.filters = new_filters
+  }
+
+  this.getFilters = function(){
+    if (this.filters.length){
+      return [this.all].concat(this.filters)
+    }else{
+      return []
+    }
+  }
+}
+
+var mapFilters = new MapFilters()
+
+function updateFiltersOnAllLayers(){
   activeMapLayers.forEach(function(layerID){
-    map.setFilter(layerID,
-      ['==',prop,val]
-    )
+    map.setFilter(layerID, mapFilters.getFilters())
   })
 }
 
-function applyMapFilterToAllLayers(prop,val){
+var wait = setInterval(function(){
+  if(map.loaded()){
+    document.getElementById('min_cost').addEventListener("change", function(e){
+      min_cost = Number(e.target.value);
+      document.getElementById('min_cost_val').innerHTML = makeBigNumbersPretty(min_cost)
 
-}
+      mapFilters.updateFilter('>=','cost',min_cost)
+      updateFiltersOnAllLayers()
+    });
 
-function applyMapFilterToAllLayers(prop,val){
-  activeMapLayers.forEach(function(layerID){
-    map.setFilter(layerID,
-      ['==',prop,val]
-    )
-  })
-}
+    document.getElementById('max_cost').addEventListener("change", function(e){
+      max_cost = Number(e.target.value);
+      document.getElementById('max_cost_val').innerHTML = makeBigNumbersPretty(max_cost)
 
-document.getElementById('min_cost').addEventListener("change", function(e){
-  min_cost = Number(e.target.value);
-  document.getElementById('min_cost_val').innerHTML = makeBigNumbersPretty(min_cost)
-  activeMapLayers.forEach(function(layerID){
-    map.setFilter(layerID, ['all',
-      ['>=','cost', min_cost],
-      ['<=','cost', max_cost]
-    ])
-  })
-});
-
-document.getElementById('max_cost').addEventListener("change", function(e){
-  max_cost = Number(e.target.value);
-  document.getElementById('max_cost_val').innerHTML = makeBigNumbersPretty(max_cost)
-  activeMapLayers.forEach(function(layerID){
-    map.setFilter(layerID, ['all',
-      ['>=','cost', min_cost],
-      ['<=','cost', max_cost]
-    ])
-  })
-});
+      mapFilters.updateFilter('<=','cost',max_cost)
+      updateFiltersOnAllLayers()
+    });
+  }else{
+    console.log('waiting on map')
+  }
+},500)

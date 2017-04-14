@@ -1,0 +1,295 @@
+{
+    "features": [
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    3
+                ],
+                "sites": [
+                    3
+                ],
+                "opp_3": 0,
+                "cost": 71994.9,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.86033799999998,
+                    39.598945
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    275
+                ],
+                "sites": [
+                    286
+                ],
+                "opp_3": 0,
+                "cost": 3430141.0,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.391561,
+                    33.755431
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    46
+                ],
+                "sites": [
+                    47
+                ],
+                "opp_3": 0,
+                "cost": 1105205.0,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.968254,
+                    39.777368
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    73
+                ],
+                "sites": [
+                    74
+                ],
+                "opp_3": 0,
+                "cost": 1156694.0,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.994423,
+                    39.74576
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    22
+                ],
+                "sites": [
+                    22
+                ],
+                "opp_3": 0,
+                "cost": 656805.6000000001,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.868566,
+                    32.807183
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    6
+                ],
+                "sites": [
+                    6
+                ],
+                "opp_3": 0,
+                "cost": 81625.2,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3871857,
+                    33.7559784
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    49
+                ],
+                "sites": [
+                    51
+                ],
+                "opp_3": 0,
+                "cost": 938491.8000000009,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -84.3911416,
+                    33.7616219
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    406
+                ],
+                "sites": [
+                    416
+                ],
+                "opp_3": 0,
+                "cost": 10977408.0,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.819612,
+                    32.800805
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    3
+                ],
+                "sites": [
+                    3
+                ],
+                "opp_3": 0,
+                "cost": 55079.399999999994,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -104.98323400000001,
+                    39.922452
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "netStat": 1,
+                "opp_1": 0,
+                "accounts": [
+                    5
+                ],
+                "sites": [
+                    5
+                ],
+                "opp_3": 0,
+                "cost": 93219.0,
+                "opportunity": [
+                    0
+                ],
+                "opp_4": 0,
+                "opp_5": 0,
+                "opp_0": 0,
+                "opp_2": 0
+            },
+            "geometry": {
+                "coordinates": [
+                    -96.8034159,
+                    32.816587
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
