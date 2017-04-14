@@ -18,7 +18,7 @@ function createProductsVis(){
     var zayoOrange = '#f58233'
     var zayoTeal = '#005d77'
 
-    var length = 20;
+    var length = 13;
     var data = pageData.products.slice(0,length);
     data.forEach(function(d,idx){
         d.product = d["Product Group"];
