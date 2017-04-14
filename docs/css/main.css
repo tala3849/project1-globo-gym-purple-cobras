@@ -5,3 +5,15 @@ body{
 #map{
   height:400px;
 }
+
+
+/*
+  Checkbox overrides
+*/
+input:checked+#onNetworkSwitch{
+  background-color:#f58233;
+}
+
+input:checked+#offNetworkSwitch{
+  background-color:#005d77;
+}

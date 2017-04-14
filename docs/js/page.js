@@ -33,9 +33,9 @@ var DataObject = function(config){
       console.log("Loaded Off Network buildings")
       that.offNetworkBuildings = offNetworkBuildings
       that.max_build_cost = d3.max(offNetworkBuildings.features.map(function(x){return x.properties.cost}))
-      document.getElementById('max_cost').max = that.max_build_cost
+      document.getElementById('max_cost').max   = that.max_build_cost
       document.getElementById('max_cost').value = that.max_build_cost
-      document.getElementById('max_cost_val').innerHTML = makeBigNumbersPretty(that.max_build_cost)
+      document.getElementById('max_cost_val').innerHTML = '$' + makeBigNumbersPretty(that.max_build_cost)
 
     });
 

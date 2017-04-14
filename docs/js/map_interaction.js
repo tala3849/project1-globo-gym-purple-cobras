@@ -53,17 +53,17 @@ function updateFiltersOnAllLayers(){
 
 var wait = setInterval(function(){
   if(map.loaded()){
-    document.getElementById('min_cost').addEventListener("change", function(e){
-      min_cost = Number(e.target.value);
-      document.getElementById('min_cost_val').innerHTML = makeBigNumbersPretty(min_cost)
-
-      mapFilters.updateFilter('>=','cost',min_cost)
-      updateFiltersOnAllLayers()
-    });
+    // document.getElementById('min_cost').addEventListener("change", function(e){
+    //   min_cost = Number(e.target.value);
+    //   document.getElementById('min_cost_val').innerHTML = makeBigNumbersPretty(min_cost)
+    //
+    //   mapFilters.updateFilter('>=','cost',min_cost)
+    //   updateFiltersOnAllLayers()
+    // });
 
     document.getElementById('max_cost').addEventListener("change", function(e){
       max_cost = Number(e.target.value);
-      document.getElementById('max_cost_val').innerHTML = makeBigNumbersPretty(max_cost)
+      document.getElementById('max_cost_val').innerHTML = '$' + makeBigNumbersPretty(max_cost)
 
       mapFilters.updateFilter('<=','cost',max_cost)
       updateFiltersOnAllLayers()

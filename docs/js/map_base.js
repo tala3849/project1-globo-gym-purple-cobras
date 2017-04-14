@@ -31,7 +31,7 @@ function loadMap(){
       type: 'circle',
       source: 'offNetwork',
       paint: {
-          'circle-color': 'red',
+          'circle-color': '#005d77',
           'circle-opacity': 0.5
       },
       layout: {'visibility':'visible'}
@@ -42,7 +42,7 @@ function loadMap(){
       type: 'circle',
       source: 'onNetwork',
       paint: {
-          'circle-color': 'green',
+          'circle-color': '#f58233',
           'circle-opacity': 0.5
       },
       layout: {'visibility':'visible'}

@@ -29,7 +29,7 @@ function createProductsVis(){
 
     // Define scales that convert from the data domain to screen coordinates
     // This will define scales that convert values
-    // from our data domain (.domain([min data value, max data value]) 
+    // from our data domain (.domain([min data value, max data value])
     // into screen coordinates (.range([min pixel value, max pixel value])).
     // Using linear scales maps the data directly to the pixel values using
     // pixel_val = c * data_val, where c is a constant computed by d3.
@@ -40,16 +40,16 @@ function createProductsVis(){
     var xScale = d3.scale.ordinal()
             .rangeRoundBands([xOffset + margin, width - margin],.1)
             .domain(data.map(function(d) { return d.product; }));
-    
+
     var yScale = d3.scale.linear()
                     .domain([0, d3.max(data, function(d) { return parseFloat(d.count); })+1])
                     .range([height - yOffset - margin, margin]);
-    
+
     // Next, we will create an SVG element to contain our visualization.
     var svg = d3.select("#barchart").append("svg:svg")
                                     .attr("width", width+30)
                                     .attr("height", height);
-    
+
 
     // Build axes! (These are kind of annoying, actually...)
     // Specify the axis scale and general position
@@ -58,7 +58,7 @@ function createProductsVis(){
                       .scale(xScale)
                       .orient("bottom")
                       // .ticks(5);
-    
+
     // Add a graphics element to hold the axis we created above (xAxis)
     // var xAxisG = svg.append('g')
     //                 .attr('class', 'axis')
@@ -75,25 +75,25 @@ function createProductsVis(){
 				    .attr("dy", ".35em")
 				    .attr("transform", "rotate(45)")
 				    .style("text-anchor", "start");
-				    
+
     // Add a label that shows the user what that axis represents
     var xLabel = svg.append("text")
                     .attr('class', 'label')
                     .attr('x', (width)/2 + 2*margin)
                     .attr('y', height - margin/2)
                     .text("Product")
-    
+
     // Repeat for the y-axis
     var yAxis = d3.svg.axis()
                       .scale(yScale)
                       .orient("left")
                       .ticks(5);
-    
+
     var yAxisG = svg.append('g')
                     .attr('class', 'axis')
                     .attr('transform', 'translate(' + xOffset + ', 0)')
                     .call(yAxis);
-    
+
     var yLabel = svg.append("text")
                     .attr('class', 'label')
                     .attr('x', xOffset/2)
@@ -123,7 +123,7 @@ function createProductsVis(){
     //     .attr('x', function(d){ return xScale(d.idx) })
     //     .attr('y', function(d){ return yScale(d.count)})
     //     .append('svg:title') // tooltip
-    //     .text(function(d) { return "(x val="+d.product+")"});            
+    //     .text(function(d) { return "(x val="+d.product+")"});
     bar.enter().append("rect")
       .attr("class", "rect")
       .attr("x", function(d) { return xScale(d.product); })

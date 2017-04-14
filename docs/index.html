@@ -31,36 +31,36 @@
     <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3>
   </header>
 
-  <section id="map">
+  <section id="map-section">
     <div class="grid grid--gut12">
       <div class="col col--1"></div>
 
       <div class="col col--7 pl0" id="map"></div>
 
       <div id="map-interaction" class="col col--3" style="opacity: 0.5;" >
-        <h5 class="txt-h5 border-b mb6">Layers</h5>
+        <h5 class="txt-h5 border-b mb6">Filters</h5>
         <label class='switch-container'>
           <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
-          <div class='switch'></div>
+          <div id="onNetworkSwitch" class='switch'></div>
             <span class="px6">On Network</span>
         </label><br>
         <label class='switch-container'>
           <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
-          <div class='switch switch'></div>
+          <div id="offNetworkSwitch" class='switch switch'></div>
             <span class="px6">Off Network</span>
         </label><br>
-        <label>
-          Minimum Building Cost
+        <!-- <label> -->
+          <!-- Minimum Building Cost
           <div class='range range--s'>
             <p class="pr6" id='min_cost_val'>0</p>
             <input id="min_cost" type='range' step="500000" value="0" min="0" max="20000000"/>
           </div>
         </label>
-        <label>
+        <label> -->
           Maximum Building Cost
           <div class='range range--s'>
-            <p class="pr6" id='max_cost_val'></p>
             <input id="max_cost" type='range' step="10000" min="100"/>
+            <p class="pr6" id='max_cost_val'></p>
           </div>
         </label>
       </div>
