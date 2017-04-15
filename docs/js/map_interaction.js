@@ -8,26 +8,41 @@ function toggleMapLayerVis(layerID){
   ( map.getLayoutProperty(layerID,'visibility')=='visible'? 'none' : 'visible') )
 }
 
-var MapFilters = function(){
+var oppSettings = {
+  opp_1:0,
+  opp_2:0,
+  opp_3:0,
+  opp_4:0,
+  opp_5:0,
+  opp_lost:0
+}
 
-  this.all = 'all'
+var oppComparisons = {
+  opp_1:'>=',
+  opp_2:'>=',
+  opp_3:'>=',
+  opp_4:'>=',
+  opp_5:'>=',
+  opp_lost:'>='
+}
+
+var MapFilters = function(){
 
   this.filters = []
 
-  this.addFilter = function(arr){
-    this.filters.push(arr)
-  }
-
-  this.hasFilter = function(value){
-    return this.filters.map(function(x){return x[1]}).indexOf(value)
-  }
-
   this.updateFilter = function(comp,prop,val){
     var new_filters = [];
-    if(!this.filters.length){
+    //If there are no filters, then add this filter
+    if (!this.filters.length){
       this.filters.push([comp,prop,val])
       return;
     }
+    //If this filter does not already exist, then add this filter
+    if (this.filters.map(function(x){return x[1]}).indexOf(prop) < 0){
+      this.filters.push([comp,prop,val])
+      return
+    }
+    //Iterate over all of the filters, find this filter, and update it, preserving the other filters
     this.filters.forEach(function(filter){
       if(filter[0]==comp && filter[1]==prop){
         new_filters.push([comp,prop,val])
@@ -39,10 +54,18 @@ var MapFilters = function(){
   }
 
   this.getFilters = function(){
+    var oppFilters = []
+    Object.keys(oppSettings).forEach(function(key){
+      oppFilters.push([oppComparisons[key],key,oppSettings[key]])
+    })
+
     if (this.filters.length){
-      return [this.all].concat(this.filters)
+      var filters = ['all'].concat(this.filters)
+      filters.push(['any'].concat(oppFilters))
+      return filters
+
     }else{
-      return []
+      return ['any'].concat(oppFilters)
     }
   }
 }
@@ -50,37 +73,108 @@ var MapFilters = function(){
 var mapFilters = new MapFilters()
 
 function updateFiltersOnAllLayers(){
-  
+  console.log(mapFilters.getFilters())
   activeMapLayers.forEach(function(layerID){
     map.setFilter(layerID, mapFilters.getFilters())
   })
 }
 
-
+var oppFiltering = false;
+function toggleAllOpportunity(){
+  oppFiltering = !oppFiltering
+  if(oppFiltering){
+    //opportunity filtering is enabled.
+    document.getElementById('opp-1').checked = 'checked';
+    oppSettings['opp_1'] = 1;
+    oppComparisons['opp_1'] = ">="
+    document.getElementById('opp-2').checked = 'checked';
+    oppSettings['opp_2'] = 1;
+    oppComparisons['opp_2'] = ">="
+    document.getElementById('opp-3').checked = 'checked';
+    oppSettings['opp_3'] = 1;
+    oppComparisons['opp_3'] = ">="
+    document.getElementById('opp-4').checked = 'checked';
+    oppSettings['opp_4'] = 1;
+    oppComparisons['opp_4'] = ">="
+    document.getElementById('opp-5').checked = 'checked';
+    oppSettings['opp_5'] = 1;
+    oppComparisons['opp_5'] = ">="
+    document.getElementById('opp-lost').checked = 'checked';
+    oppSettings['opp_lost'] = 1;
+    oppComparisons['opp_lost'] = ">="
+  }else{
+    document.getElementById('opp-1').checked = null;
+    oppSettings['opp_1'] = 0
+    oppComparisons['opp_1'] = ">="
+    document.getElementById('opp-2').checked = null;
+    oppSettings['opp_2'] = 0
+    oppComparisons['opp_2'] = ">="
+    document.getElementById('opp-3').checked = null;
+    oppSettings['opp_3'] = 0
+    oppComparisons['opp_3'] = ">="
+    document.getElementById('opp-4').checked = null;
+    oppSettings['opp_4'] = 0
+    oppComparisons['opp_4'] = ">="
+    document.getElementById('opp-5').checked = null;
+    oppSettings['opp_5'] = 0
+    oppComparisons['opp_5'] = ">="
+    document.getElementById('opp-lost').checked = null;
+    oppSettings['opp_lost'] = 0
+    oppComparisons['opp_lost'] = ">="
+  }
+  updateFiltersOnAllLayers();
+}
 
 function toggleOpportunity(opp_level){
-  console.log("opportunity: "+opp_level)
 
-  if(mapFilters.hasFilter(opp_level)){
-    mapFilters.addFilter('>', opp_level, 1)
-    updateFiltersOnAllLayers()
+  //If oppFiltering is on and these opps are being turned off, then we need to update it:
+  if(oppFiltering){
+    //If this setting is active, make it inactive
+    if(oppSettings[opp_level]>0){
+      oppComparisons[opp_level] = '<'
+      oppSettings[opp_level] = 0 //There is no such thing, so it will go away
+    }else if(oppSettings[opp_level]==0){
+      //It was inactive, so let's make it active
+      oppComparisons[opp_level] = '>='
+      oppSettings[opp_level] = 1
+    }
   }else{
-    mapFilters.updateFilters('>=', opp_level, 0)
-    updateFiltersOnAllLayers()
+    //Opp filtering was NOT on, so we need to turn it on, but ONLY with this level.
+    Object.keys(oppSettings).forEach(function(key){
+      if(key!=opp_level){
+        oppComparisons[key]  = "<"
+      }else{
+        oppSettings[opp_level] = 1
+        oppComparisons[opp_level] = '>='
+      }
+    })
+    //For all of the other ones, turn it off!
+    //And turn on oppFiltering
+    oppFiltering = true;
+    document.getElementById('opp-0').checked = 'checked';
   }
+
+  //If we have turned off all opportunity filters, then we need to kick it back on:
+  var sum = 0;
+  Object.keys(oppSettings).forEach(function(key){
+    sum+= oppSettings[key]
+  })
+  if(sum==0){
+    console.log("Resetting")
+    oppFiltering = false
+    Object.keys(oppSettings).forEach(function(key){
+      oppSettings[key] = 0
+      oppComparisons[key] = '>='
+    })
+    document.getElementById('opp-0').checked = null;
+  }
+  updateFiltersOnAllLayers()
 }
 
 
 
 var wait = setInterval(function(){
   if(map.loaded()){
-    // document.getElementById('min_cost').addEventListener("change", function(e){
-    //   min_cost = Number(e.target.value);
-    //   document.getElementById('min_cost_val').innerHTML = makeBigNumbersPretty(min_cost)
-    //
-    //   mapFilters.updateFilter('>=','cost',min_cost)
-    //   updateFiltersOnAllLayers()
-    // });
 
     document.getElementById('max_cost').addEventListener("change", function(e){
       max_cost = Math.exp(Number(e.target.value));

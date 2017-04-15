@@ -66,40 +66,42 @@
 
         <h5 class="txt-h5 border-b mb6">Opportunities</h5>
         <label class='switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleAllOpportunity()"/>
+          <input id="opp-0" type='checkbox' onClick="toggleAllOpportunity()"/>
           <div class='switch opp_switch'></div>
-            <span class="px6">Any Opportunities</span>
+            <span class="px6">Show Only Buildings with Opportunities</span>
         </label><br>
-        <label class='ml12 switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_1')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">1 - Working</span>
-        </label><br>
-        <label class='ml12 switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_2')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">2 - Best Case</span>
-        </label><br>
-        <label class='ml12 switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_3')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">3 - Committed</span>
-        </label><br>
-        <label class='ml12 switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_4')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">4 - Closed</span>
-        </label><br>
-        <label class='ml12 switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_5')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">5  - Accepted</span>
-        </label><br>
-        <label class='switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleOpportunity('opp_lost')"/>
-          <div class='switch opp_switch'></div>
-            <span class="px6">Closed - Lost</span>
-        </label>
+        <div id="opp-filters">
+          <label class='ml12 switch-container'>
+            <input id="opp-1" type='checkbox' onClick="toggleOpportunity('opp_1')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Working</span>
+          </label><br>
+          <label class='ml12 switch-container'>
+            <input id="opp-2" type='checkbox' onClick="toggleOpportunity('opp_2')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Best Case</span>
+          </label><br>
+          <label class='ml12 switch-container'>
+            <input id="opp-3" type='checkbox' onClick="toggleOpportunity('opp_3')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Committed</span>
+          </label><br>
+          <label class='ml12 switch-container'>
+            <input id="opp-5" type='checkbox' onClick="toggleOpportunity('opp_5')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Accepted</span>
+          </label><br>
+          <label class='ml12 switch-container'>
+            <input id="opp-4" type='checkbox' onClick="toggleOpportunity('opp_4')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Closed</span>
+          </label><br>
+          <label class='ml12 switch-container'>
+            <input id="opp-lost" type='checkbox' onClick="toggleOpportunity('opp_lost')"/>
+            <div class='switch opp_switch'></div>
+              <span class="px6">Closed (Lost)</span>
+          </label>
+        </div>
 
 
 
