@@ -10,22 +10,44 @@ function createProfitVis(){
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
-    var vals = ['x', 'y']; // List of data attributes
-    var xVal = vals[0]; // Value to plot on x-axis
-    var yVal = vals[1]; // Value to plot on y-axis
-    var transDur = 100; // Transition time in ms
+    // var transDur = 100; // Transition time in ms
 
     var zayoOrange = '#f58233'
     var zayoTeal = '#005d77'
 
-    var length = 13;
-    var data = pageData.products.slice(0,length);
+
+        var unlog = function(d) {
+            if (d>0){
+                return "$"+Math.pow(10,d).toFixed(2)
+            }
+            else if(d==0){
+                return '$0.00';
+            }
+            else {
+                return "-$"+Math.pow(10,-d).toFixed(2)
+            }
+        }
+
+
+    var data = pageData.profit;
     data.forEach(function(d,idx){
-        d.product = d["Product Group"];
+        d.buildingId = d["Building ID"];
         d.idx = idx;
-        d.count = +d["Count"];
-        // console.log(idx, d.product, d.count)
+        if (+d['profit']>1){
+            d.profit = Math.log10(+d['profit']);
+        }
+        else if(+d['profit']<1 && +d['profit']>=0){
+            d.profit = 0;
+        }
+        else { //if(+d['profit']<0)
+            d.profit = -Math.log10(-1* +d['profit']);
+        }
+        // d.profit = +d["profit"];
+        console.log(idx, d.buildingId, d.profit)
     });
+
+
+
 
     // Define scales that convert from the data domain to screen coordinates
     // This will define scales that convert values
@@ -34,22 +56,27 @@ function createProfitVis(){
     // Using linear scales maps the data directly to the pixel values using
     // pixel_val = c * data_val, where c is a constant computed by d3.
 
-    // var xScale = d3.scale.linear()
-    //                 .domain([0, data.length])
-    //                 .range([xOffset + margin, w - margin]);
-    var xScale = d3.scale.ordinal()
-            .rangeRoundBands([xOffset + margin, width - margin],.1)
-            .domain(data.map(function(d) { return d.product; }));
+    var xScale = d3.scale.linear()
+                    .domain([0, d3.max(data, function(d) { return parseFloat(d.idx); })+1])
+                    .range([xOffset + margin, width - margin]);
+
+    // var yScale = d3.scale.log()
+    //                 .domain([0.0001, d3.max(data, function(d) { return parseFloat(d.profit); })+1])
+    //                 .range([height - yOffset - margin, margin]);
 
     var yScale = d3.scale.linear()
-                    .domain([0, d3.max(data, function(d) { return parseFloat(d.count); })+1])
+                    .domain([d3.min(data, function(d) { return parseFloat(d.profit); })-1,
+                             d3.max(data, function(d) { return parseFloat(d.profit); })+1])
                     .range([height - yOffset - margin, margin]);
 
+    console.log("yscale 10",yScale(10))
+
+
     // Next, we will create an SVG element to contain our visualization.
-    var svg = d3.select("#barchart").append("svg:svg")
+    var svg = d3.select("#scatterplot").append("svg:svg")
                                     .attr("width", width)
                                     .attr("height", height)
-                                    .attr("id","barchartsvg");
+                                    .attr("id","scattersvg");
 
 
     // Build axes!
@@ -60,39 +87,35 @@ function createProfitVis(){
                       // .ticks(5);
 
     // Add a graphics element to hold the axis we created above (xAxis)
-    // var xAxisG = svg.append('g')
-    //                 .attr('class', 'axis')
-    //                 .attr('transform', 'translate(0, ' + (h - yOffset) + ')')
-    //                 .call(xAxis);
-
     var xAxisG = svg.append('g')
                     .attr('class', 'axis')
-				    .attr('id','xaxis')
+				    .attr('id','xaxis-scatter')
                     .attr("transform", "translate(0," + (height-yOffset) + ")")
                     .call(xAxis)
-				  .selectAll("text")
-				    .attr("y", 10)
-				    .attr("x", 9)
-				    .attr("dy", ".35em")
-				    .attr("transform", "rotate(45)")
-				    .style("text-anchor", "start");
-	// console.log("X axis width:",d3.select('#xaxis').node().getBoundingClientRect().width)
-
-    d3.select("#barchartsvg")
-    		.attr("width", d3.select('#barchart').node().getBoundingClientRect().width)
 
     // Add a label that shows the user what that axis represents
     var xLabel = svg.append("text")
                     .attr('class', 'label')
                     .attr('x', (width)/2 + 2*margin)
-                    .attr('y', height-yOffset+d3.select('#xaxis').node().getBoundingClientRect().height) //puts axis label below individual labels
-                    .text("Product")
+                    .attr('y', height-yOffset+d3.select('#xaxis-scatter').node().getBoundingClientRect().height+10) //puts axis label below individual labels
+                    .text("Buildings")
 
     // Repeat for the y-axis
     var yAxis = d3.svg.axis()
                       .scale(yScale)
                       .orient("left")
-                      .ticks(5);
+                      .ticks(8)
+                      .tickFormat(function(d) { return unlog(d).slice(0,-3)
+                        // if (d>0){
+                        //     return "$"+Math.pow(10,d)
+                        // }
+                        // else if(d==0){
+                        //     return 0;
+                        // }
+                        // else {
+                        //     return "$-"+Math.pow(10,-d)
+                        // }
+                    })
 
     var yAxisG = svg.append('g')
                     .attr('class', 'axis')
@@ -106,50 +129,42 @@ function createProfitVis(){
 				    // .attr("dy", ".35em")
 				    .attr("transform", "rotate(270)")
 				    .style("text-anchor", "start")
-                    .text("# Buildings");
+                    .text("Profit");
 
     // Now, we will start actually building our scatterplot!
-    var bar = svg.selectAll('.rect') // Select elements
+    var point = svg.selectAll('.point') // Select elements
                 .data(data);        // Bind data to elements
 
-    // bar.enter().append('svg:rect'); // Create new elements if needed
+
+
+
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-            return "<span style='color:white'>"+d.product+"</br>"+d.count+" buildings</span>";
+            return "<span style='color:white'>"+d.buildingId+"</br>Profit = "+(unlog(d.profit))+"</span>";
         })
 
     svg.call(tip);
 
-    // Update our selection
-    // bar
-    //     .attr('class', 'rect') // Give it a class
-    //     .attr('height', function(d) { return h-yScale(d.count)-yOffset-margin; })   // y-coordinate
-    //     // .attr('width', function(d){return 20})
-    //     .attr('x', function(d){ return xScale(d.idx) })
-    //     .attr('y', function(d){ return yScale(d.count)})
-    //     .append('svg:title') // tooltip
-    //     .text(function(d) { return "(x val="+d.product+")"});
-    bar.enter().append("rect")
-      .attr("class", "rect")
-      .attr("x", function(d) { return xScale(d.product); })
-      .attr("y", function(d) { return yScale(d.count); })
-      .attr("height", function(d) { return height-yScale(d.count)-yOffset-margin; })
-      .attr("width", xScale.rangeBand());
-	    // .style("fill", function(d) { return color(d.name); });
+    point.enter().append("circle")
+        .attr("class", "point")
+        .attr('cx', function(d) { return xScale(d.idx); })    // x-coordinate
+        .attr('cy', function(d) { 
+                // console.log("profit",yScale(d.profit)); 
+                return yScale(d.profit); })    // y-coordinate      
+        .attr('r',4)
 
     // Prettier tooltip
-    bar.on('mouseover', function(d){
+    point.on('mouseover', function(d){
         tip.show(d);
         this.style = "fill:"+zayoTeal;
     })
-    bar.on('mouseout', function(d){
+    point.on('mouseout', function(d){
         tip.hide(d);
         this.style = "fill:"+zayoOrange;
     });
-
 
 
 }

@@ -11,13 +11,13 @@ body {
 }
 
 .point {
-    fill: #67074e; 
-    stroke: #000;
+    fill: #f58233; 
+    /*stroke: #000;*/
 }
 
 .pointh {
     fill: #000; 
-    stroke: #000;
+    /*stroke: #000;*/
 }
 
 .rect {

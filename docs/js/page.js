@@ -50,5 +50,9 @@ var DataObject = function(config){
       that.products = csv;
     })
 
+    d3.csv(that.dir+'/profit_per_building.csv',function(csv){
+      that.profit = csv;
+    })
+
   }
 }

@@ -75,6 +75,7 @@ function createProductsVis(){
 				    .style("text-anchor", "start");
 	// console.log("X axis width:",d3.select('#xaxis').node().getBoundingClientRect().width)
 
+    // Update width of scatterplot to accommodate long rotated x-axis labels
     d3.select("#barchartsvg")
     		.attr("width", d3.select('#barchart').node().getBoundingClientRect().width)
 
