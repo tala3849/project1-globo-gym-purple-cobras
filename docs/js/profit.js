@@ -2,7 +2,7 @@
 
 function createProfitVis(){
 	console.log("Starting the profit scatterplot vis")
-	console.log(pageData.products)
+	// console.log(pageData.products)
 
 
     var width = 600; // Width of our visualization
@@ -43,7 +43,7 @@ function createProfitVis(){
             d.profit = -Math.log10(-1* +d['profit']);
         }
         // d.profit = +d["profit"];
-        console.log(idx, d.buildingId, d.profit)
+        // console.log(idx, d.buildingId, d.profit)
     });
 
 
@@ -69,7 +69,7 @@ function createProfitVis(){
                              d3.max(data, function(d) { return parseFloat(d.profit); })+1])
                     .range([height - yOffset - margin, margin]);
 
-    console.log("yscale 10",yScale(10))
+    // console.log("yscale 10",yScale(10))
 
 
     // Next, we will create an SVG element to contain our visualization.
@@ -165,6 +165,5 @@ function createProfitVis(){
         tip.hide(d);
         this.style = "fill:"+zayoOrange;
     });
-
 
 }
