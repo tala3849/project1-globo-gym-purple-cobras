@@ -6,7 +6,7 @@ function createProfitVis(){
 
 
     var width = 600; // Width of our visualization
-    var height = 600; // Height of our visualization
+    var height = 500; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
@@ -151,9 +151,9 @@ function createProfitVis(){
     point.enter().append("circle")
         .attr("class", "point")
         .attr('cx', function(d) { return xScale(d.idx); })    // x-coordinate
-        .attr('cy', function(d) { 
-                // console.log("profit",yScale(d.profit)); 
-                return yScale(d.profit); })    // y-coordinate      
+        .attr('cy', function(d) {
+                // console.log("profit",yScale(d.profit));
+                return yScale(d.profit); })    // y-coordinate
         .attr('r',4)
 
     // Prettier tooltip

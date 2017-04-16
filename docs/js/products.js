@@ -5,7 +5,7 @@ function createProductsVis(){
 	// console.log(pageData.products)
 
     var width = 600; // Width of our visualization
-    var height = 600; // Height of our visualization
+    var height = 500; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
