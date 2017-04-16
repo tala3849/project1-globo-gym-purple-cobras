@@ -70,10 +70,6 @@ var MapFilters = function(){
     filters.push(['any'].concat(prodFilters))
 
     return filters
-
-    // }else{
-    //   return ['any'].concat(oppFilters)
-    // }
   }
 }
 
@@ -81,9 +77,12 @@ var mapFilters = new MapFilters()
 
 function updateFiltersOnAllLayers(){
   console.log(mapFilters.getFilters())
-  activeMapLayers.forEach(function(layerID){
-    map.setFilter(layerID, mapFilters.getFilters())
-  })
+  // mapSetFilter
+  map.setFilter('on-network',  mapFilters.getFilters())
+  map.setFilter('off-network', mapFilters.getFilters())
+  // activeMapLayers.forEach(function(layerID){
+  //   map.setFilter(layerID, mapFilters.getFilters())
+  // })
 }
 
 var oppFiltering = false;
@@ -239,9 +238,8 @@ function toggleAllProducts(){
     document.getElementById('FTT - Dark Fiber').checked = 'checked';
     prodSettings['FTT - Dark Fiber'] = 1;
     prodComparisons['FTT - Dark Fiber'] = ">="
-    document.getElementById('prod-lost').checked = 'checked';
-    prodSettings['prod_lost'] = 1;
-    prodComparisons['prod_lost'] = ">="
+    document.getElementById('ISP').checked = 'checked';
+    prodSettings['ISP'] = 1; prodComparisons['ISP'] = ">="
   }else{
     document.getElementById('Dark Fiber - Metro').checked = null;
     prodSettings['Dark Fiber - Metro'] = 0
@@ -258,9 +256,9 @@ function toggleAllProducts(){
     document.getElementById('FTT - Dark Fiber').checked = null;
     prodSettings['FTT - Dark Fiber'] = 0
     prodComparisons['FTT - Dark Fiber'] = ">="
-    document.getElementById('prod-lost').checked = null;
-    prodSettings['prod_lost'] = 0
-    prodComparisons['prod_lost'] = ">="
+    document.getElementById('ISP').checked = null;
+    prodSettings['ISP'] = 0
+    prodComparisons['ISP'] = ">="
   }
   updateFiltersOnAllLayers();
 }
@@ -274,6 +272,9 @@ function toggleProduct(product){
     if(prodSettings[product]>0){
       prodComparisons[product] = '<'
       prodSettings[product] = 0 //There is no such thing, so it will go away
+
+      document.getElementById('bar-'+product).style = "fill:"+zayoOrange;
+
     }else if(prodSettings[product]==0){
       //It was inactive, so let's make it active
       prodComparisons[product] = '>='

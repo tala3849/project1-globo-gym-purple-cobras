@@ -2,6 +2,10 @@
   General Page functions should go here
 */
 
+var zayoOrange = '#f58233'
+var zayoTeal = '#005d77'
+
+
 function makeBigNumbersPretty(num){
   var str;
   if (num > 1000000){

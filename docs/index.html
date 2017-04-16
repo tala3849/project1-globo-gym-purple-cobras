@@ -21,14 +21,19 @@
 <link href="css/main.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/melissa.css"></link>
 
-
 <script src="js/page.js"></script>
 </head>
 
 <body>
   <header>
-    <h1 class="txt-h1">Project 1: Zayo Market Visualization</h1>
-    <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3>
+    <!-- <h1 class="txt-h1">Project 1: Zayo Market Visualization</h1> -->
+    <!-- <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3> -->
+    <!-- <div id="map-vis-description">
+      <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
+      <p id='map-desc-prose' class="txt--m" style="display:none;">
+        For this project we have created three unique visualizations. For our first visualization we have created an interactive map using OpenStreetMap allowing user to explore Zayo's current and potential oppurtunities. <br>Our second visualization shows how many current products we sell and where we sell them. <br>Our third visualization is a scatterplot of revenue.</p>
+    </div> -->
+
   </header>
 
   <section id="map-section">
@@ -64,119 +69,145 @@
           </div>
         </label>
 
-        <div class="col col--2">
-
-          <h5 class="txt-h5 border-b mb6">Opportunities</h5>
-          <label class='switch-container'>
-            <input id="opp-0" type='checkbox' onClick="toggleAllOpportunity()"/>
-            <div class='switch opp_switch'></div>
-              <span class="px6">Show Only Buildings with Opportunities</span>
-          </label><br>
-          <div id="opp-filters">
-            <label class='ml12 switch-container'>
-              <input id="opp-1" type='checkbox' onClick="toggleOpportunity('opp_1')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Working</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-2" type='checkbox' onClick="toggleOpportunity('opp_2')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Best Case</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-3" type='checkbox' onClick="toggleOpportunity('opp_3')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Committed</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-5" type='checkbox' onClick="toggleOpportunity('opp_5')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Accepted</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-4" type='checkbox' onClick="toggleOpportunity('opp_4')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Closed</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-lost" type='checkbox' onClick="toggleOpportunity('opp_lost')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Closed (Lost)</span>
+        <div class="flex-parent">
+          <div class="flex-child">
+            <h5 class="txt-h5 border-b mb6">Products</h5>
+            <label class='switch-container'>
+              <input id="prod-0" type='checkbox' onClick="toggleAllProducts()"/>
+              <div class='switch prod_switch'></div>
+                <span class="px6">Filter by Products (Any)</span>
             </label>
+            <div class="scroll-always h240">
+              <label class='ml12 switch-container'>
+                <input id="Dark Fiber - Metro" type='checkbox' onClick="toggleProduct('Dark Fiber - Metro')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Dark Fiber - Metro</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="Ethernet" type='checkbox' onClick="toggleProduct('Ethernet')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Ethernet</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="IP Services" type='checkbox' onClick="toggleProduct('IP Services')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">IP Services</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="SONET" type='checkbox' onClick="toggleProduct('SONET')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">SONET</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="FTT - Dark Fiber" type='checkbox' onClick="toggleProduct('FTT - Dark Fiber')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">FTT - Dark Fiber</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="ISP" type='checkbox' onClick="toggleProduct('ISP')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">ISP</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="Managed WAN-LAN" type='checkbox' onClick="toggleProduct('Managed WAN-LAN')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Managed WAN-LAN 7</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="FTT - Ethernet" type='checkbox' onClick="toggleProduct('FTT - Ethernet')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">FTT - Ethernet</span>
+              </label>
+              <label class='ml12 switch-container'>
+                <input id="Dark Fiber - Long Haul" type='checkbox' onClick="toggleProduct('Dark Fiber - Long Haul')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Dark Fiber - Long Haul</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="FTT - Small Cell" type='checkbox' onClick="toggleProduct('FTT - Small Cell')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">FTT - Small Cell</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="Wavelengths - Long Haul" type='checkbox' onClick="toggleProduct('Wavelengths - Long Haul')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Wavelengths - Long Haul</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="Wavelengths - Metro" type='checkbox' onClick="toggleProduct('Wavelengths - Metro')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">Wavelengths - Metro</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="zColo" type='checkbox' onClick="toggleProduct('zColo')"/>
+                <div class='switch prod_switch'></div>
+                  <span class="px6">zColo</span>
+              </label>
+            </div>
+          </div>
+
+
+          <div class="flex-child">
+            <h5 class="txt-h5 mb6 border-b">Opportunities</h5>
+            <label class='switch-container'>
+              <input id="opp-0" type='checkbox' onClick="toggleAllOpportunity()"/>
+              <div class='switch opp_switch'></div>
+                <span class="px6">Show Only Buildings with Opportunities Any)</span>
+            </label><br>
+            <div id="opp-filters">
+              <label class='ml12 switch-container'>
+                <input id="opp-1" type='checkbox' onClick="toggleOpportunity('opp_1')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Working</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="opp-2" type='checkbox' onClick="toggleOpportunity('opp_2')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Best Case</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="opp-3" type='checkbox' onClick="toggleOpportunity('opp_3')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Committed</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="opp-5" type='checkbox' onClick="toggleOpportunity('opp_5')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Accepted</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="opp-4" type='checkbox' onClick="toggleOpportunity('opp_4')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Closed</span>
+              </label><br>
+              <label class='ml12 switch-container'>
+                <input id="opp-lost" type='checkbox' onClick="toggleOpportunity('opp_lost')"/>
+                <div class='switch opp_switch'></div>
+                  <span class="px6">Closed (Lost)</span>
+              </label>
+            </div>
           </div>
         </div>
-
-        <div class="col col--2">
-          <h5 class="txt-h5 border-b mb6">Opportunities</h5>
-          <label class='switch-container'>
-            <input id="opp-0" type='checkbox' onClick="toggleAllOpportunity()"/>
-            <div class='switch opp_switch'></div>
-              <span class="px6">Show Only Buildings with Opportunities</span>
-          </label><br>
-          <div id="opp-filters">
-            <label class='ml12 switch-container'>
-              <input id="opp-1" type='checkbox' onClick="toggleOpportunity('opp_1')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Working</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-2" type='checkbox' onClick="toggleOpportunity('opp_2')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Best Case</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-3" type='checkbox' onClick="toggleOpportunity('opp_3')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Committed</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-5" type='checkbox' onClick="toggleOpportunity('opp_5')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Accepted</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-4" type='checkbox' onClick="toggleOpportunity('opp_4')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Closed</span>
-            </label><br>
-            <label class='ml12 switch-container'>
-              <input id="opp-lost" type='checkbox' onClick="toggleOpportunity('opp_lost')"/>
-              <div class='switch opp_switch'></div>
-                <span class="px6">Closed (Lost)</span>
-            </label>
-          </div>
-        </div>
-
-
-
-
       </div>
     </div>
+
     <script src="js/map_base.js"></script>
     <script src="js/map_interaction.js"></script>
 
-    <div id="map-vis-description">
-      <button id='map-desc-button' class='btn' onClick="toggleVis('map-desc-button','map-desc-prose')">Description</button>
-      <p id='map-desc-prose' class="prose" style="display:none;">
-        Description of how this map works and what it shows
-      </p>
-    </div>
   </section>
+  <section>
+    <div class="grid">
+    <div class="col col--1"></div>
 
-  <!-- Section 2: Products -->
-  <div class='grid'>
-    <div id='product' class="col col--6">
-      <h4 class="txt-h4">Products</h4>
-        <div id="barchart"></div>
-    </div>
-
+    <!-- Section 2: Products -->
+    <div id="barchart" class="col col--5"></div>
     <script src="js/products.js"></script>
 
-
-<!-- Section 3: Markets -->
-    <div id='product' class="col col--6">
-      <h4 class="txt-h4">Revenue</h4>
-        <div id="barchart"></div>
+  <!-- Section 3: Markets -->
+      <div id='product' class="col col--5">
+        <h4 class="txt-h4">Revenue</h4>
+          <div id="barchart"></div>
+      </div>
     </div>
   </div>
 

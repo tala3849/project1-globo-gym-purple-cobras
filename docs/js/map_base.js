@@ -3,6 +3,9 @@ var map = new mapboxgl.Map({
     container: 'map',
     zoom: 3,
     hash:true,
+    minZoom:2.87,
+    maxZoom:15.5,
+    // bounds:
     center: [-96.78, 37.43],
     style:'mapbox://styles/mapbox/light-v9'
   });

@@ -2,7 +2,7 @@
 
 function createProductsVis(){
 	console.log("Starting the products vis")
-	console.log(pageData.products)
+	// console.log(pageData.products)
 
 
     var width = 600; // Width of our visualization
@@ -14,10 +14,6 @@ function createProductsVis(){
     var xVal = vals[0]; // Value to plot on x-axis
     var yVal = vals[1]; // Value to plot on y-axis
     var transDur = 100; // Transition time in ms
-
-    var zayoOrange = '#f58233'
-    var zayoTeal = '#005d77'
-
     var length = 13;
     var data = pageData.products.slice(0,length);
     data.forEach(function(d,idx){
@@ -27,16 +23,6 @@ function createProductsVis(){
         // console.log(idx, d.product, d.count)
     });
 
-    // Define scales that convert from the data domain to screen coordinates
-    // This will define scales that convert values
-    // from our data domain (.domain([min data value, max data value])
-    // into screen coordinates (.range([min pixel value, max pixel value])).
-    // Using linear scales maps the data directly to the pixel values using
-    // pixel_val = c * data_val, where c is a constant computed by d3.
-
-    // var xScale = d3.scale.linear()
-    //                 .domain([0, data.length])
-    //                 .range([xOffset + margin, w - margin]);
     var xScale = d3.scale.ordinal()
             .rangeRoundBands([xOffset + margin, width - margin],.1)
             .domain(data.map(function(d) { return d.product; }));
@@ -136,6 +122,7 @@ function createProductsVis(){
       .attr("class", "rect")
       .attr("x", function(d) { return xScale(d.product); })
       .attr("y", function(d) { return yScale(d.count); })
+			.attr("id", function(d) { return "bar-"+d.product; })
       .attr("height", function(d) { return height-yScale(d.count)-yOffset-margin; })
       .attr("width", xScale.rangeBand());
 	    // .style("fill", function(d) { return color(d.name); });
@@ -143,13 +130,26 @@ function createProductsVis(){
     // Prettier tooltip
     bar.on('mouseover', function(d){
         tip.show(d);
-        this.style = "fill:"+zayoTeal;
+        // this.style = "fill:"+zayoTeal;
+				d3.select(this).style("cursor", "pointer")
     })
+
+		bar.on('click',function(d){
+			console.log(d)
+			toggleProduct(d.product)
+			if(prodSettings[d.product] > 0){
+				document.getElementById(d.product).checked = 'checked';
+				this.style = "fill:"+zayoTeal;
+			}else{
+				document.getElementById(d.product).checked = null;
+				this.style = "fill:"+zayoOrange;
+			}
+			console.log(this)
+		})
+
     bar.on('mouseout', function(d){
         tip.hide(d);
-        this.style = "fill:"+zayoOrange;
+				d3.select(this).style("cursor", "default")
+        // this.style = "fill:"+zayoOrange;
     });
-
-
-
 }

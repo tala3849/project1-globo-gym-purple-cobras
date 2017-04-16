@@ -33,3 +33,11 @@ input:checked+.opp_switch{
 div.opp_switch{
   color:#696571;
 }
+
+div.prod_switch{
+  color:#696571;
+}
+
+input:checked+.prod_switch{
+  background-color:#696571;
+}
