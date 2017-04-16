@@ -1,7 +1,7 @@
 /*  js for services */
 
-function createProductsVis(){
-	console.log("Starting the products bar chart vis")
+function createProfitVis(){
+	console.log("Starting the profit scatterplot vis")
 	console.log(pageData.products)
 
 
@@ -10,6 +10,9 @@ function createProductsVis(){
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
+    var vals = ['x', 'y']; // List of data attributes
+    var xVal = vals[0]; // Value to plot on x-axis
+    var yVal = vals[1]; // Value to plot on y-axis
     var transDur = 100; // Transition time in ms
 
     var zayoOrange = '#f58233'
