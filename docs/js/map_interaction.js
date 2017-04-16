@@ -59,14 +59,21 @@ var MapFilters = function(){
       oppFilters.push([oppComparisons[key],key,oppSettings[key]])
     })
 
-    if (this.filters.length){
-      var filters = ['all'].concat(this.filters)
-      filters.push(['any'].concat(oppFilters))
-      return filters
+    var prodFilters = []
+    Object.keys(prodSettings).forEach(function(key){
+      prodFilters.push([prodComparisons[key],key,prodSettings[key]])
+    })
 
-    }else{
-      return ['any'].concat(oppFilters)
-    }
+
+    var filters = ['all'].concat(this.filters)
+    filters.push(['any'].concat(oppFilters))
+    filters.push(['any'].concat(prodFilters))
+
+    return filters
+
+    // }else{
+    //   return ['any'].concat(oppFilters)
+    // }
   }
 }
 
@@ -170,6 +177,151 @@ function toggleOpportunity(opp_level){
   }
   updateFiltersOnAllLayers()
 }
+
+
+
+/*
+
+    Product Filtering
+
+*/
+
+//Products are:
+var prodSettings = {
+ 'Dark Fiber - Metro':0,
+ 'Ethernet':0,
+ 'IP Services':0,
+ 'SONET':0,
+ 'FTT - Dark Fiber':0,
+ 'ISP':0,
+ 'Managed WAN-LAN':0,
+ 'FTT - Ethernet':0,
+ 'Dark Fiber - Long Haul':0,
+ 'FTT - Small Cell':0,
+ 'Wavelengths - Long Haul':0,
+ 'Wavelengths - Metro':0,
+ 'zColo':0
+}
+
+var prodComparisons = {
+  'Dark Fiber - Metro':'>=',
+  'Ethernet':'>=',
+  'IP Services':'>=',
+  'SONET':'>=',
+  'FTT - Dark Fiber':'>=',
+  'ISP':'>=',
+  'Managed WAN-LAN':'>=',
+  'FTT - Ethernet':'>=',
+  'Dark Fiber - Long Haul':'>=',
+  'FTT - Small Cell':'>=',
+  'Wavelengths - Long Haul':'>=',
+  'Wavelengths - Metro':'>=',
+  'zColo':'>='
+}
+
+var prodFiltering = false;
+function toggleAllProducts(){
+  prodFiltering = !prodFiltering
+  if(prodFiltering){
+    //product filtering is enabled.
+    document.getElementById('Dark Fiber - Metro').checked = 'checked';
+    prodSettings['Dark Fiber - Metro'] = 1;
+    prodComparisons['Dark Fiber - Metro'] = ">="
+    document.getElementById('Ethernet').checked = 'checked';
+    prodSettings['Ethernet'] = 1;
+    prodComparisons['Ethernet'] = ">="
+    document.getElementById('IP Services').checked = 'checked';
+    prodSettings['IP Services'] = 1;
+    prodComparisons['IP Services'] = ">="
+    document.getElementById('SONET').checked = 'checked';
+    prodSettings['SONET'] = 1;
+    prodComparisons['SONET'] = ">="
+    document.getElementById('FTT - Dark Fiber').checked = 'checked';
+    prodSettings['FTT - Dark Fiber'] = 1;
+    prodComparisons['FTT - Dark Fiber'] = ">="
+    document.getElementById('prod-lost').checked = 'checked';
+    prodSettings['prod_lost'] = 1;
+    prodComparisons['prod_lost'] = ">="
+  }else{
+    document.getElementById('Dark Fiber - Metro').checked = null;
+    prodSettings['Dark Fiber - Metro'] = 0
+    prodComparisons['Dark Fiber - Metro'] = ">="
+    document.getElementById('Ethernet').checked = null;
+    prodSettings['Ethernet'] = 0
+    prodComparisons['Ethernet'] = ">="
+    document.getElementById('IP Services').checked = null;
+    prodSettings['IP Services'] = 0
+    prodComparisons['IP Services'] = ">="
+    document.getElementById('SONET').checked = null;
+    prodSettings['SONET'] = 0
+    prodComparisons['SONET'] = ">="
+    document.getElementById('FTT - Dark Fiber').checked = null;
+    prodSettings['FTT - Dark Fiber'] = 0
+    prodComparisons['FTT - Dark Fiber'] = ">="
+    document.getElementById('prod-lost').checked = null;
+    prodSettings['prod_lost'] = 0
+    prodComparisons['prod_lost'] = ">="
+  }
+  updateFiltersOnAllLayers();
+}
+
+function toggleProduct(product){
+  console.log(product)
+
+  //If oppFiltering is on and these opps are being turned off, then we need to update it:
+  if(prodFiltering){
+    //If this setting is active, make it inactive
+    if(prodSettings[product]>0){
+      prodComparisons[product] = '<'
+      prodSettings[product] = 0 //There is no such thing, so it will go away
+    }else if(prodSettings[product]==0){
+      //It was inactive, so let's make it active
+      prodComparisons[product] = '>='
+      prodSettings[product] = 1
+    }
+  }else{
+    //Opp filtering was NOT on, so we need to turn it on, but ONLY with this level.
+    Object.keys(prodSettings).forEach(function(key){
+      if(key!=product){
+        prodComparisons[key]  = "<"
+      }else{
+        prodSettings[product] = 1
+        prodComparisons[product] = '>='
+      }
+    })
+    //For all of the other ones, turn it off!
+    //And turn on oppFiltering
+    prodFiltering = true;
+    document.getElementById('prod-0').checked = 'checked';
+  }
+
+  //If we have turned off all opportunity filters, then we need to kick it back on:
+  var sum = 0;
+  Object.keys(prodSettings).forEach(function(key){
+    sum+= prodSettings[key]
+  })
+  if(sum==0){
+    console.log("Resetting")
+    prodFiltering = false
+    Object.keys(prodSettings).forEach(function(key){
+      prodSettings[key] = 0
+      prodComparisons[key] = '>='
+    })
+    document.getElementById('prod-0').checked = null;
+  }
+  updateFiltersOnAllLayers()
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
