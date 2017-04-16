@@ -4,15 +4,11 @@ function createProductsVis(){
 	console.log("Starting the products vis")
 	// console.log(pageData.products)
 
-
     var width = 600; // Width of our visualization
     var height = 600; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
-    var vals = ['x', 'y']; // List of data attributes
-    var xVal = vals[0]; // Value to plot on x-axis
-    var yVal = vals[1]; // Value to plot on y-axis
     var transDur = 100; // Transition time in ms
     var length = 13;
     var data = pageData.products.slice(0,length);
@@ -38,7 +34,7 @@ function createProductsVis(){
                                     .attr("id","barchartsvg");
 
 
-    // Build axes! (These are kind of annoying, actually...)
+    // Build axes!
     // Specify the axis scale and general position
     var xAxis = d3.svg.axis()
                       .scale(xScale)
@@ -64,6 +60,7 @@ function createProductsVis(){
 				    .style("text-anchor", "start");
 	// console.log("X axis width:",d3.select('#xaxis').node().getBoundingClientRect().width)
 
+    // Update width of scatterplot to accommodate long rotated x-axis labels
     d3.select("#barchartsvg")
     		.attr("width", d3.select('#barchart').node().getBoundingClientRect().width)
 

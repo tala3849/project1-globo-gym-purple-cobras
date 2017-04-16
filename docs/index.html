@@ -197,20 +197,17 @@
   </section>
   <section>
     <div class="grid">
-    <div class="col col--1"></div>
+      <div class="col col--1"></div>
 
-    <!-- Section 2: Products -->
-    <div id="barchart" class="col col--5"></div>
-    <script src="js/products.js"></script>
+      <!-- Section 2: Products -->
+      <div id="barchart" class="col col--5"></div>
+      <script src="js/products.js"></script>
 
-  <!-- Section 3: Markets -->
-      <div id='product' class="col col--5">
-        <h4 class="txt-h4">Revenue</h4>
-          <div id="barchart"></div>
-      </div>
+      <!-- Section 3: Markets -->
+      <div id='scatterplot' class="col col--5">
+      <script src="js/profit.js"></script>
     </div>
-  </div>
-
+  </section>
 
 
   <script>
@@ -230,11 +227,14 @@
           //Call Map
           loadMap();
 
-          //Call Products VIs
+          //Call Products Vis
           createProductsVis();
 
+          //Call Profit Vis
+          createProfitVis();
+
         }else {
-          console.log("Data Still loading, waiting for 0.5 seconds")
+          console.log("Data still loading, waiting for 0.5 seconds")
         }
       },500)
     }
