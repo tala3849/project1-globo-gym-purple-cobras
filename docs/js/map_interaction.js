@@ -29,6 +29,7 @@ var oppComparisons = {
 var MapFilters = function(){
 
   this.filters = []
+  this.revFilterOn = false;
 
   this.updateFilter = function(comp,prop,val){
     var new_filters = [];
@@ -38,7 +39,7 @@ var MapFilters = function(){
       return;
     }
     //If this filter does not already exist, then add this filter
-    if (this.filters.map(function(x){return x[1]}).indexOf(prop) < 0){
+    if (this.filters.map(function(x){return [x[0], x[1]].toString()}).indexOf( [comp, prop].toString() ) < 0){
       this.filters.push([comp,prop,val])
       return
     }
@@ -76,7 +77,7 @@ var MapFilters = function(){
 var mapFilters = new MapFilters()
 
 function updateFiltersOnAllLayers(){
-  console.log(mapFilters.getFilters())
+  // console.log(mapFilters.getFilters())
   // mapSetFilter
   map.setFilter('on-network',  mapFilters.getFilters())
   map.setFilter('off-network', mapFilters.getFilters())
@@ -84,6 +85,33 @@ function updateFiltersOnAllLayers(){
   //   map.setFilter(layerID, mapFilters.getFilters())
   // })
 }
+
+function clearMapRevFilter(){
+  if(mapFilters.revFilterOn){
+    var new_filters = [];
+    mapFilters.filters.forEach(function(filter){
+      if(!(filter[1]==="b_rev")){
+        new_filters.push(filter)
+      }
+    })
+    // console.log(new_filters)
+    mapFilters.filters = new_filters
+    mapFilters.revFilterOn = false;
+    updateFiltersOnAllLayers()
+  }
+}
+
+function mapRevFilter(min,max){
+
+  mapFilters.revFilterOn = true;
+
+  mapFilters.updateFilter('>=','b_rev',min)
+  mapFilters.updateFilter('<=','b_rev',max)
+
+  updateFiltersOnAllLayers();
+}
+
+//Opporutnity Filtering
 
 var oppFiltering = false;
 function toggleAllOpportunity(){

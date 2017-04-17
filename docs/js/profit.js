@@ -4,9 +4,8 @@ function createProfitVis(){
 	console.log("Starting the profit scatterplot vis")
 	// console.log(pageData.products)
 
-
     var width = 600; // Width of our visualization
-    var height = 500; // Height of our visualization
+    var height = 450; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
     var margin = 5; // Margin around visualization
@@ -15,19 +14,17 @@ function createProfitVis(){
     var zayoOrange = '#f58233'
     var zayoTeal = '#005d77'
 
-
-        var unlog = function(d) {
-            if (d>0){
-                return "$"+Math.pow(10,d).toFixed(2)
-            }
-            else if(d==0){
-                return '$0.00';
-            }
-            else {
-                return "-$"+Math.pow(10,-d).toFixed(2)
-            }
+    var unlog = function(d) {
+        if (d>0){
+            return "$"+Math.pow(10,d).toFixed(2)
         }
-
+        else if(d==0){
+            return '$0.00';
+        }
+        else {
+            return "-$"+Math.pow(10,-d).toFixed(2)
+        }
+    }
 
     var data = pageData.profit;
     data.forEach(function(d,idx){
@@ -45,9 +42,6 @@ function createProfitVis(){
         // d.profit = +d["profit"];
         // console.log(idx, d.buildingId, d.profit)
     });
-
-
-
 
     // Define scales that convert from the data domain to screen coordinates
     // This will define scales that convert values
@@ -131,6 +125,14 @@ function createProfitVis(){
 				    .style("text-anchor", "start")
                     .text("Profit");
 
+
+		//add the brush
+		// svg.append("g")
+    //   .attr("class", "brush")
+    //   .call(brush)
+    //   .call(brush.move, x.range());
+
+
     // Now, we will start actually building our scatterplot!
     var point = svg.selectAll('.point') // Select elements
                 .data(data);        // Bind data to elements
@@ -148,6 +150,52 @@ function createProfitVis(){
 
     svg.call(tip);
 
+
+		//Add the brush
+
+		var brush = d3.svg.brush()
+			brush.x(xScale)
+			// brush.extent([200, 1000])
+
+		brush.on('brushend', function() {
+
+			var e = brush.extent()
+			var min = parseInt(e[0])
+			var max = parseInt(e[1])
+
+			if (max>data.length-1){
+				max = data.length-1
+			}
+			if (min < 0){
+				min = 0;
+			}
+			if (min==max){
+				clearMapRevFilter()
+				return;
+			}else{
+				var minV, maxV
+				min = data[min].profit
+				max = data[max].profit
+				if (min > 0){
+					minV = Math.pow(10,min)
+				}else if (min==0){
+					minV = 0
+				}else{
+					minV = -Math.pow(10,-min)
+				}
+				if (max > 0){
+					maxV = Math.pow(10,max)
+				}else if (max==0){
+					maxV = 0
+				}else{
+					maxV = -Math.pow(10,-max)
+				}
+				mapRevFilter(minV, maxV)
+			}
+		})
+
+		brush(svg)
+
     point.enter().append("circle")
         .attr("class", "point")
         .attr('cx', function(d) { return xScale(d.idx); })    // x-coordinate
@@ -158,12 +206,25 @@ function createProfitVis(){
 
     // Prettier tooltip
     point.on('mouseover', function(d){
-        tip.show(d);
-        this.style = "fill:"+zayoTeal;
+      tip.show(d);
+      this.style = "fill:"+zayoTeal;
     })
     point.on('mouseout', function(d){
-        tip.hide(d);
-        this.style = "fill:"+zayoOrange;
+      tip.hide(d);
+      this.style = "fill:"+zayoOrange;
     });
+
+
+
+		svg.selectAll('.extent')
+			.attr('height', height-yOffset)
+		svg.selectAll('.resize rect')
+			.attr('height', height-yOffset)
+		  .style({ fill: zayoTeal, opacity:0.5, visibility: 'visible' })
+
+		svg.selectAll('.background')
+		  .style({ fill: zayoTeal, opacity:0.3, visibility: 'visible' })
+		svg.selectAll('.extent')
+		  .style({ fill: zayoTeal, opacity: 0.3, visibility: 'none' })
 
 }

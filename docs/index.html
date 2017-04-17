@@ -10,6 +10,10 @@
 <!-- Fancy tooltips -->
 <script src="lib/d3.tip.v0.6.3.js"></script>
 
+<!-- Brush -->
+<script src="https://d3js.org/d3-brush.v1.min.js"></script>
+
+
 <!-- Maps -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.css' rel='stylesheet' />
@@ -27,10 +31,8 @@
 <body>
 
   <div id="blocker" class="flex-parent flex-parent--center-main flex-parent--center-cross" style=" z-index:100; position:fixed; top:0; left:0; height:100%; width:100%; background-color:rgba(245,130,41,0.75); cursor:wait;">
-    <div id="blocker-sub" class="flex-child prose--dark h180 p24 round-bold" style="background-color:#005d77;">
+    <div id="blocker-sub" class="flex-child prose--dark h60 p24 round-bold" style="background-color:#005d77;">
       <h1 class="loading--dark m18"></h1>
-      <hr/>
-      <p class="txt-m">If this window does not go away, or you do not see <br>points load onto the map, please refresh the page.</small>
     </div>
   </div>
 

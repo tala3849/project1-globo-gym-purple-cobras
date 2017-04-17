@@ -77,11 +77,17 @@ var products = [ 'Dark Fiber - Metro',  'Ethernet',  'IP Services',  'SONET',  '
 
 function buildPrettyTable(properties){
 
-  var html = `<div class="prose">
-  <h4>Total Sites: <span class="pre">${properties.sites}</span></h4>
-  <h4>Building Cost: <span class="pre">$${properties.cost.toFixed(2)}</span></h4>`
+  console.log(JSON.stringify(properties.b_rev))
 
-  html += `<h4 class="txt-h3">Available Proucts:</h4><table>`
+  var html = `<div class="prose">
+  <h5 class="txt-m">Total Sites: <span class="pre">${properties.sites}</span></h5>
+  <h5 class="txt-m">Building Cost: <span class="pre">$${properties.cost.toFixed(2)}</span></h5>`
+
+  if (properties.b_rev>0){
+    html += `<h5 class="txt-m">Revenue: <span class="pre">$${properties.b_rev.toFixed(2)}</span></h5>`
+  }
+
+  html += `<h5 class="txt-m">Available Proucts:</h5><table>`
   html += `<tr><th>Product</th><th>Count</th></tr>`
   products.forEach(function(product){
     if (properties[product]>0){
