@@ -20,7 +20,7 @@ We drew out wireframes at several meetings to help develop our ideas and have a 
 * **Melissa**: bar chart, scatterplot, data preprocessing
 * **Kyle**: data preprocessing, visual design
 * **Taylor**: 
-* **Chase**: 
+* **Chase**: data interpretation, project management
 
 ## How to Run: 
 [https://info-4602-5602.github.io/project1-globo-gym-purple-cobras/](https://info-4602-5602.github.io/project1-globo-gym-purple-cobras/)
