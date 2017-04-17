@@ -54,25 +54,31 @@
       <div class="col col--7 pl0" id="map"></div>
 
       <div id="map-interaction" class="col col--3">
+
         <h5 class="txt-h5 border-b mb6">Filters</h5>
-        <label class='switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
-          <div class='onNetworkSwitch switch'></div>
-            <span class="px6">On Network</span>
-        </label><br>
-        <label class='switch-container'>
-          <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
-          <div class='offNetworkSwitch switch'></div>
-            <span class="px6">Off Network</span>
-        </label><br>
-        <!-- <label> -->
-          <!-- Minimum Building Cost
-          <div class='range range--s'>
-            <p class="pr6" id='min_cost_val'>0</p>
-            <input id="min_cost" type='range' step="500000" value="0" min="0" max="20000000"/>
+
+        <div class="flex-parent">
+          <div class="flex-child">
+            <label class='switch-container'>
+              <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
+              <div class='onNetworkSwitch switch'></div>
+                <span class="px6">On Network</span>
+            </label><br>
+            <label class='switch-container'>
+              <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('off-network')"/>
+              <div class='offNetworkSwitch switch'></div>
+                <span class="px6">Off Network</span>
+            </label>
           </div>
-        </label>
-        <label> -->
+          <div class="flex-child ml24">
+
+            <div id="FeatureList">
+            </div>
+            <button class='btn btn--s' style="background-color:#005d77;" id="CalculateFeatures">Calculate Cost / Revenue</button>
+          </div>
+        </div><br>
+
+        <label>
           Maximum Building Cost
           <div class='range range--s'>
             <input id="max_cost" type='range' step="0.1" min="4.6"/>

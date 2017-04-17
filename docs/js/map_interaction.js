@@ -384,6 +384,28 @@ function toggleProduct(product){
   updateFiltersOnAllLayers()
 }
 
+map.on('move',function(){
+  document.getElementById('CalculateFeatures').innerHTML = "Re-Calculate Cost / Revenue"
+  document.getElementById('FeatureList').innerHTML = `<h4 class="m2">Revenue: $ -.-- </h4>
+<h4 class="m6">Cost: $ -.--</h4>`
+})
+
+document.getElementById('CalculateFeatures').addEventListener('click',function(e){
+  var features = map.queryRenderedFeatures({layers:activeMapLayers});
+
+  if (features.length){
+    console.log(features.length)
+  }
+  var rev_sum = 0;
+  var cost    = 0;
+  for (var i=0; i<features.length; i++){
+    rev_sum += Number(features[i].properties.b_rev);
+    cost    += Number(features[i].properties.cost)
+  }
+  document.getElementById('FeatureList').innerHTML = `<h4 class="m2">Revenue: $${rev_sum.toLocaleString()}</h4>
+  <h4 class="m6">Cost: $${cost.toLocaleString()}</h4>`
+})
+
 
 var wait = setInterval(function(){
   if(map.loaded()){
