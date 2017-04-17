@@ -13,13 +13,13 @@ Finally, the scatterplot shows the total profit (calculated as MRR - MRC from `Z
 ## Design Process 
 //REMOVE (e.g., how did you go about designing, building, and refining your system? Why did you choose these representations?)
 
-We drew out wireframes at several meetings to help develop our ideas and have a visual representation of a final system to work toward throughout development. We refined our system through team discussions in which we weighed the pros and cons of each in relation to the outcome of providing useful visual analytic tools for Zayo. We chose these visualizations as we believe they are intuitive for both the types of data we are working with and for our customers to interact with and gain insight from. 
+We drew out wireframes at several meetings to help develop our ideas and have a visual representation of a final system to work toward throughout development. We refined our system through team discussions in which we weighed the pros and cons of each in relation to the outcome of providing useful visual analytic tools for Zayo. We chose these visualizations as we believe they are intuitive for both the types of data we are working with and for our customers to interact with and gain insight from. We thought that by visualizing, buliding location, both on and off Zayo network including the oppertunities, with the types of products those buildings have purchased, as well as the prevalence of each product type across the buldings, it would help Zayo see the best market to build in, and what product would be most appealing to the location of the market that would appear most profitable.
 
 ## Team Roles
 * **Jennings**: map vis, data preprocessing, interactions between vises
 * **Melissa**: bar chart, scatterplot, data preprocessing
 * **Kyle**: 
-* **Taylor**: 
+* **Taylor**: Individual contributor 
 * **Chase**: 
 
 ## How to Run: 
