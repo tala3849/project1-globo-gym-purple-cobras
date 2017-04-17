@@ -83,9 +83,7 @@ function buildPrettyTable(properties){
   <h5 class="txt-m">Total Sites: <span class="pre">${properties.sites}</span></h5>
   <h5 class="txt-m">Building Cost: <span class="pre">$${properties.cost.toFixed(2)}</span></h5>`
 
-  if (properties.b_rev>0){
-    html += `<h5 class="txt-m">Revenue: <span class="pre">$${properties.b_rev.toFixed(2)}</span></h5>`
-  }
+  html += `<h5 class="txt-m">Revenue: <span class="pre">$${properties.b_rev.toFixed(2)}</span></h5>`
 
   html += `<h5 class="txt-m">Available Proucts:</h5><table>`
   html += `<tr><th>Product</th><th>Count</th></tr>`

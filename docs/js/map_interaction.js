@@ -268,6 +268,27 @@ function toggleAllProducts(){
     prodComparisons['FTT - Dark Fiber'] = ">="
     document.getElementById('ISP').checked = 'checked';
     prodSettings['ISP'] = 1; prodComparisons['ISP'] = ">="
+    document.getElementById('Managed WAN-LAN').checked = 'checked';
+    prodSettings['Managed WAN-LAN'] = 1;
+    prodComparisons['Managed WAN-LAN'] = ">="
+    document.getElementById('FTT - Ethernet').checked = 'checked';
+    prodSettings['FTT - Ethernet'] = 1;
+    prodComparisons['FTT - Ethernet'] = ">="
+    document.getElementById('Dark Fiber - Long Haul').checked = 'checked';
+    prodSettings['Dark Fiber - Long Haul'] = 1;
+    prodComparisons['Dark Fiber - Long Haul'] = ">="
+    document.getElementById('FTT - Small Cell').checked = 'checked';
+    prodSettings['FTT - Small Cell'] = 1;
+    prodComparisons['FTT - Small Cell'] = ">="
+    document.getElementById('Wavelengths - Long Haul').checked = 'checked';
+    prodSettings['Wavelengths - Long Haul'] = 1;
+    prodComparisons['Wavelengths - Long Haul'] = ">="
+    document.getElementById('Wavelengths - Metro').checked = 'checked';
+    prodSettings['Wavelengths - Metro'] = 1;
+    prodComparisons['Wavelengths - Metro'] = ">="
+    document.getElementById('zColo').checked = 'checked';
+    prodSettings['zColo'] = 1;
+    prodComparisons['zColo'] = ">="
   }else{
     document.getElementById('Dark Fiber - Metro').checked = null;
     prodSettings['Dark Fiber - Metro'] = 0
@@ -287,6 +308,27 @@ function toggleAllProducts(){
     document.getElementById('ISP').checked = null;
     prodSettings['ISP'] = 0
     prodComparisons['ISP'] = ">="
+    document.getElementById('Managed WAN-LAN').checked = null;
+    prodSettings['Managed WAN-LAN'] = 0;
+    prodComparisons['Managed WAN-LAN'] = ">="
+    document.getElementById('FTT - Ethernet').checked = null;
+    prodSettings['FTT - Ethernet'] = 0;
+    prodComparisons['FTT - Ethernet'] = ">="
+    document.getElementById('Dark Fiber - Long Haul').checked = null;
+    prodSettings['Dark Fiber - Long Haul'] = 0;
+    prodComparisons['Dark Fiber - Long Haul'] = ">="
+    document.getElementById('FTT - Small Cell').checked = null;
+    prodSettings['FTT - Small Cell'] = 0;
+    prodComparisons['FTT - Small Cell'] = ">="
+    document.getElementById('Wavelengths - Long Haul').checked = null;
+    prodSettings['Wavelengths - Long Haul'] = 0;
+    prodComparisons['Wavelengths - Long Haul'] = ">="
+    document.getElementById('Wavelengths - Metro').checked = null;
+    prodSettings['Wavelengths - Metro'] = 0;
+    prodComparisons['Wavelengths - Metro'] = ">="
+    document.getElementById('zColo').checked = null;
+    prodSettings['zColo'] = 0;
+    prodComparisons['zColo'] = ">="
   }
   updateFiltersOnAllLayers();
 }
@@ -300,15 +342,16 @@ function toggleProduct(product){
     if(prodSettings[product]>0){
       prodComparisons[product] = '<'
       prodSettings[product] = 0 //There is no such thing, so it will go away
-
       document.getElementById('bar-'+product).style = "fill:"+zayoOrange;
 
     }else if(prodSettings[product]==0){
       //It was inactive, so let's make it active
       prodComparisons[product] = '>='
       prodSettings[product] = 1
+      document.getElementById('bar-'+product).style = "fill:"+zayoTeal;
     }
   }else{
+    document.getElementById('bar-'+product).style = "fill:"+zayoTeal;
     //Opp filtering was NOT on, so we need to turn it on, but ONLY with this level.
     Object.keys(prodSettings).forEach(function(key){
       if(key!=product){

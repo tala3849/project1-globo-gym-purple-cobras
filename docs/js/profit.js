@@ -145,7 +145,7 @@ function createProfitVis(){
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-            return "<span style='color:white'>"+d.buildingId+"</br>Profit = "+(unlog(d.profit))+"</span>";
+            return "<span style='color:white'>Market: "+d.Market+"</br>Profit = "+(unlog(d.profit))+"</span>";
         })
 
     svg.call(tip);
@@ -218,13 +218,14 @@ function createProfitVis(){
 
 		svg.selectAll('.extent')
 			.attr('height', height-yOffset)
+			.style({ fill: zayoTeal, opacity:0.3, visibility: 'visible' })
 		svg.selectAll('.resize rect')
 			.attr('height', height-yOffset)
-		  .style({ fill: zayoTeal, opacity:0.5, visibility: 'visible' })
-
+		  .style({ fill: zayoTeal, opacity:0.5, visibility: 'none' })
+		//
 		svg.selectAll('.background')
 		  .style({ fill: zayoTeal, opacity:0.3, visibility: 'visible' })
-		svg.selectAll('.extent')
-		  .style({ fill: zayoTeal, opacity: 0.3, visibility: 'none' })
+		// svg.selectAll('.extent')
+		//   .style({ fill: zayoTeal, opacity: 0.3, visibility: 'none' })
 
 }
