@@ -4,7 +4,7 @@ function createProfitVis(){
 	console.log("Starting the profit scatterplot vis")
 	// console.log(pageData.products)
 
-    var width = 600; // Width of our visualization
+    var width = 500; // Width of our visualization
     var height = 450; // Height of our visualization
     var xOffset = 60; // Space for y-axis labels
     var yOffset = 150; // Space for x-axis labels
