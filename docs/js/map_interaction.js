@@ -77,7 +77,6 @@ var MapFilters = function(){
 var mapFilters = new MapFilters()
 
 function updateFiltersOnAllLayers(){
-  // console.log(mapFilters.getFilters())
   // mapSetFilter
   map.setFilter('on-network',  mapFilters.getFilters())
   map.setFilter('off-network', mapFilters.getFilters())
@@ -194,7 +193,6 @@ function toggleOpportunity(opp_level){
     sum+= oppSettings[key]
   })
   if(sum==0){
-    console.log("Resetting")
     oppFiltering = false
     Object.keys(oppSettings).forEach(function(key){
       oppSettings[key] = 0
@@ -334,7 +332,7 @@ function toggleAllProducts(){
 }
 
 function toggleProduct(product){
-  console.log(product)
+  // console.log(product)
 
   //If oppFiltering is on and these opps are being turned off, then we need to update it:
   if(prodFiltering){
@@ -373,7 +371,7 @@ function toggleProduct(product){
     sum+= prodSettings[key]
   })
   if(sum==0){
-    console.log("Resetting")
+    // console.log("Resetting")
     prodFiltering = false
     Object.keys(prodSettings).forEach(function(key){
       prodSettings[key] = 0
@@ -416,6 +414,15 @@ var wait = setInterval(function(){
       mapFilters.updateFilter('<=','cost',max_cost)
       updateFiltersOnAllLayers()
     });
+
+    document.getElementById('min_accounts').addEventListener("change", function(e){
+      min_accounts = Number(e.target.value);
+      document.getElementById('min_accounts_val').innerHTML = min_accounts
+
+      mapFilters.updateFilter('>=','accounts',min_accounts)
+      updateFiltersOnAllLayers()
+    });
+
     console.log("map loaded, clearing interaction pause")
     clearInterval(wait)
     document.getElementById('blocker-sub').style="display:none;"

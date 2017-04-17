@@ -132,7 +132,6 @@ function createProductsVis(){
     })
 
 		bar.on('click',function(d){
-			console.log(d)
 			toggleProduct(d.product)
 			if(prodSettings[d.product] > 0){
 				document.getElementById(d.product).checked = 'checked';
@@ -141,7 +140,6 @@ function createProductsVis(){
 				document.getElementById(d.product).checked = null;
 				this.style = "fill:"+zayoOrange;
 			}
-			console.log(this)
 		})
 
     bar.on('mouseout', function(d){

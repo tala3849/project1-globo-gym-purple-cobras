@@ -17,6 +17,11 @@ var activeMapLayers = [
   'off-network','on-network'
 ]
 
+var circleRadius = {
+  'property': 'accounts',
+  'stops'   : [[1,5],[20,8],[100,12]]
+}
+
 function loadMap(){
   map.once('load',function(){
 
@@ -35,7 +40,8 @@ function loadMap(){
       source: 'offNetwork',
       paint: {
           'circle-color': '#005d77',
-          'circle-opacity': 0.5
+          'circle-opacity': 0.5,
+          'circle-radius' : circleRadius
       },
       layout: {'visibility':'visible'}
     })
@@ -46,7 +52,8 @@ function loadMap(){
       source: 'onNetwork',
       paint: {
           'circle-color': '#f58233',
-          'circle-opacity': 0.5
+          'circle-opacity': 0.5,
+          'circle-radius': circleRadius
       },
       layout: {'visibility':'visible'}
     })
@@ -79,11 +86,11 @@ function buildPrettyTable(properties){
 
   console.log(JSON.stringify(properties.b_rev))
 
-  var html = `<div class="prose">
-  <h5 class="txt-m">Total Sites: <span class="pre">${properties.sites}</span></h5>
-  <h5 class="txt-m">Building Cost: <span class="pre">$${properties.cost.toFixed(2)}</span></h5>`
-
-  html += `<h5 class="txt-m">Revenue: <span class="pre">$${properties.b_rev.toFixed(2)}</span></h5>`
+  var html = `<table class="txt--m">
+  <tr><td>Sites</td><td pl6><span class="txt-mono">${properties.sites}</span></td></tr>
+  <tr><td>Accounts</td><td pl6><span class="txt-mono">${properties.accounts}</span></td></tr>
+  <tr><td>Building Cost</td><td pl6><span class="txt-mono">$${properties.cost.toLocaleString()}</span></td></tr>
+  <tr><td>Building Revenue</td><td pl6><span class="txt-mono">$${properties.b_rev.toLocaleString()}</span></td></tr></table>`
 
   html += `<h5 class="txt-m">Available Proucts:</h5><table>`
   html += `<tr><th>Product</th><th>Count</th></tr>`
