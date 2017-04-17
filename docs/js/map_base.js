@@ -61,14 +61,33 @@ function loadMap(){
         if(!features.length){popup.remove(); return}
 
         popup.setLngLat(e.lngLat)
-          .setHTML(JSON.stringify(features[0].properties))
+          .setHTML(buildPrettyTable(features[0].properties))
           .addTo(map);
 
       }else{
         map.getCanvas().style.cursor = ''
       }
     });
-    //Once map is loaded, enable controls
-    document.getElementById('map-interaction').style.opacity = 1;
+    //Once map is loaded, call pageLoaded()
+    pageData.mapLoaded = true;
   });
 };
+
+var products = [ 'Dark Fiber - Metro',  'Ethernet',  'IP Services',  'SONET',  'FTT - Dark Fiber',  'ISP',  'Managed WAN-LAN',  'FTT - Ethernet',  'Dark Fiber - Long Haul',  'FTT - Small Cell',  'Wavelengths - Long Haul',  'Wavelengths - Metro',  'zColo']
+
+function buildPrettyTable(properties){
+
+  var html = `<div class="prose">
+  <h4>Total Sites: <span class="pre">${properties.sites}</span></h4>
+  <h4>Building Cost: <span class="pre">$${properties.cost.toFixed(2)}</span></h4>`
+
+  html += `<h4 class="txt-h3">Available Proucts:</h4><table>`
+  html += `<tr><th>Product</th><th>Count</th></tr>`
+  products.forEach(function(product){
+    if (properties[product]>0){
+      html += `<tr><td>${product}</td><td>${properties[product]}</td></tr>`
+    }
+  })
+
+  return html + "</table></div>"
+}

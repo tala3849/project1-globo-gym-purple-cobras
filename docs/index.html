@@ -25,6 +25,15 @@
 </head>
 
 <body>
+
+  <div id="blocker" class="flex-parent flex-parent--center-main flex-parent--center-cross" style=" z-index:100; position:fixed; top:0; left:0; height:100%; width:100%; background-color:rgba(245,130,41,0.75); cursor:wait;">
+    <div id="blocker-sub" class="flex-child prose--dark h180 p24 round-bold" style="background-color:#005d77;">
+      <h1 class="loading--dark m18"></h1>
+      <hr/>
+      <p class="txt-m">If this window does not go away, or you do not see <br>points load onto the map, please refresh the page.</small>
+    </div>
+  </div>
+
   <header>
     <!-- <h1 class="txt-h1">Project 1: Zayo Market Visualization</h1> -->
     <!-- <h3 class="txt-h3">Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence</h3> -->
@@ -42,7 +51,7 @@
 
       <div class="col col--7 pl0" id="map"></div>
 
-      <div id="map-interaction" class="col col--3" style="opacity: 0.5;" >
+      <div id="map-interaction" class="col col--3">
         <h5 class="txt-h5 border-b mb6">Filters</h5>
         <label class='switch-container'>
           <input type='checkbox' checked='checked' onClick="toggleMapLayerVis('on-network')"/>
@@ -196,7 +205,7 @@
 
   </section>
   <section>
-    <div class="grid">
+    <div class="grid gut-12">
 
     <div class="col col--1"></div>
       <!-- Section 2: Products -->
@@ -213,12 +222,14 @@
   <script>
     var pageData
 
+    var pageLoaded = false;
+
     // Load all the data into the DOM (going to slow things down....)
     function runPage(directory){
       pageData = new DataObject({dir: directory})
       pageData.load()
       var pause = setInterval(function(){
-        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products && pageData.services){
+        if (pageData.onNetworkBuildings && pageData.offNetworkBuildings && pageData.products && pageData.services ){
           clearInterval(pause);
           console.log("Data loaded, data available inside of pageData Object")
 
@@ -234,14 +245,13 @@
           createProfitVis();
 
         }else {
-          console.log("Data still loading, waiting for 0.5 seconds")
+          console.log("Data still loading, waiting for 1 second")
         }
-      },500)
+      },100)
     }
 
     //Default:
     runPage('data')
   </script>
-
 </body>
 </html>

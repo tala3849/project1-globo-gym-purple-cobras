@@ -314,21 +314,8 @@ function toggleProduct(product){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 var wait = setInterval(function(){
   if(map.loaded()){
-
     document.getElementById('max_cost').addEventListener("change", function(e){
       max_cost = Math.exp(Number(e.target.value));
       document.getElementById('max_cost_val').innerHTML = '$' + makeBigNumbersPretty(max_cost)
@@ -338,7 +325,9 @@ var wait = setInterval(function(){
     });
     console.log("map loaded, clearing interaction pause")
     clearInterval(wait)
+    document.getElementById('blocker-sub').style="display:none;"
+    document.getElementById('blocker').style="display:none;"
   }else{
     console.log('waiting on map to load interaction')
   }
-},500)
+},1000)
