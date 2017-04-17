@@ -10,6 +10,8 @@ The next two visualizations were implemented using D3. The bar chart shows the p
 
 Finally, the scatterplot shows the total profit (calculated as MRR - MRC from `ZayoHackathonData_Services.csv`) for each building in increasing order. This plot is also interactive with the map in that clicking on the plot area displays a range tool to choose to filter buildings on the map within a certain profit range. 
 
+The dashboard is styled in Zayo's orange and teal colors.
+
 ## Design Process 
 //REMOVE (e.g., how did you go about designing, building, and refining your system? Why did you choose these representations?)
 
