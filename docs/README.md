@@ -18,7 +18,7 @@ We drew out wireframes at several meetings to help develop our ideas and have a 
 ## Team Roles
 * **Jennings**: map vis, data preprocessing, interactions between vises
 * **Melissa**: bar chart, scatterplot, data preprocessing
-* **Kyle**: 
+* **Kyle**: data preprocessing, visual design
 * **Taylor**: 
 * **Chase**: 
 
