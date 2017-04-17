@@ -4,11 +4,11 @@ Jennings Anderson, Melissa Bica, Kyle Frye, Chase Kregor, Taylor Lawrence
 ## Visualizations
 //REMOVE Information about your visualizations and what they show. Include information about interactions as appropriate.
 
-The first vis on the page is a map showing all of Zayo's buildings (from `ZayoHackathonData_Buildings.csv`). Filtering options are included on the right to filter by whether the building is on/off the Zayo network, whether the building is an "opportunity" (from `ZayoHackathonData_Opportunities.csv`), and the types of products that building has purchased (from `ZayoHackathonData_Services.csv`).
+The first vis on the page is a map showing all of Zayo's buildings (from `ZayoHackathonData_Buildings.csv`). Filtering options are included on the right to filter by whether the building is on/off the Zayo network, whether the building is an "opportunity" (from `ZayoHackathonData_Opportunities.csv`), the types of products that building has purchased (from `ZayoHackathonData_Services.csv`), the number of accounts per building, and .
 
 The bar chart shows the prevalence of each product type across buildings (from `ZayoHackathonData_Buildings.csv` and `ZayoHackathonData_Services.csv`). The bar chart is interactive with the main map in that clicking on a bar for a specific product filters the buildings represented on the map to buildings which have purchased those products.
 
-Finally, the scatterplot shows the total profit (calculated as MRR - MRC from `ZayoHackathonData_Services.csv`) for each building in increasing order. 
+Finally, the scatterplot shows the total profit (calculated as MRR - MRC from `ZayoHackathonData_Services.csv`) for each building in increasing order. This plot is also interactive with the map in that clicking on the plot area displays a range tool to choose to filter buildings on the map within a certain profit range. 
 
 ## Design Process 
 //REMOVE (e.g., how did you go about designing, building, and refining your system? Why did you choose these representations?)
@@ -22,7 +22,7 @@ We drew out wireframes at several meetings to help develop our ideas and have a 
 * **Taylor**: 
 * **Chase**: data interpretation, project management
 
-## How to Run: 
+## How to Run
 [https://info-4602-5602.github.io/project1-globo-gym-purple-cobras/](https://info-4602-5602.github.io/project1-globo-gym-purple-cobras/)
 
 *(Wait a few moments for the data to appear on the map, and refresh the page if no data appears within 5 or so seconds.)*
